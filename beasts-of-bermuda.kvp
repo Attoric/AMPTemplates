@@ -4,7 +4,7 @@ App.AdminPortRef=RemoteAdminPort
 App.ApplicationIPBinding=0.0.0.0
 App.ApplicationReadyMode=Immediate
 App.BaseDirectory=./beasts-of-bermuda/882430/
-App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}}
+App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}} ?Port={{$ApplicationPort1}}?QueryPort={{$ApplicationPort2}} -log
 App.CommandLineParameterDelimiter= 
 App.CommandLineParameterFormat=-{0} "{1}"
 App.Compatibility=None
