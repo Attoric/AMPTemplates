@@ -10,7 +10,7 @@
         "UpdateStageName":"Create Configs Directory",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"CreateDirectory",
-        "UpdateSourceArgs":"{{$FullBaseDir}}\WindowsServer\BeastsOfBermuda\Saved\Config\WindowsServer",
+        "UpdateSourceArgs":"{{$FullBaseDir}}\\WindowsServer\\BeastsOfBermuda\\Saved\\Config\\WindowsServer",
         "OverwriteExistingFiles":false
     },
     {
