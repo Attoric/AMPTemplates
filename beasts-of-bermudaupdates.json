@@ -17,8 +17,8 @@
         "UpdateStageName":"Server Template Config File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://raw.githubusercontent.com/Attoric/AMPTemplates/Custom/beasts-of-Bermuda-Game.ini",
-        "UpdateSourceArgs":"AMP_serverconfig.json",
+        "UpdateSourceData":"https://raw.githubusercontent.com/Attoric/AMPTemplates/Custom/beasts-of-bermuda-Game.ini",
+        "UpdateSourceArgs":"Game.ini"
         "UpdateSourceTarget":"{{$FullRootDir}}",
         "OverwriteExistingFiles":false
     }
