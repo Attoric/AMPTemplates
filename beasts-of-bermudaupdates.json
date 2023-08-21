@@ -5,5 +5,21 @@
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "882430",
         "UpdateSourceArgs": "719890",
+    },
+    {
+        "UpdateStageName":"Create Configs Directory",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"CreateDirectory",
+        "UpdateSourceArgs":"{{$FullBaseDir}}\WindowsServer\BeastsOfBermuda\Saved\Config\WindowsServer",
+        "OverwriteExistingFiles":false
+    },
+    {
+        "UpdateStageName":"Server Template Config File Download",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://raw.githubusercontent.com/Attoric/AMPTemplates/Custom/beasts-of-Bermuda-Game.ini",
+        "UpdateSourceArgs":"AMP_serverconfig.json",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "OverwriteExistingFiles":false
     }
 ]
