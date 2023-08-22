@@ -123,10 +123,10 @@
     {
         "DisplayName": "All other settings",
         "Category": "Server Settings",
-        "Description": "Use File Manager to edit Game.ini",
+        "Description": "Use https://cleafspear.github.io/ to generate a config and paste the contents to Game.ini using the file manager to WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer",
         "Keywords": "other,setting",
         "FieldName": "otherSettingNote",
-        "InputType": "textarea",
+        "InputType": "text",
         "IsFlagArgument": false,
         "ParamFieldName": "NumPlayers",
         "IncludeInCommandLine": false,
