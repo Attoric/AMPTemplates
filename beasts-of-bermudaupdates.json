@@ -7,13 +7,6 @@
         "UpdateSourceArgs": "719890"
     },
     {
-        "UpdateStageName":"Create Configs Directory",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"CreateDirectory",
-        "UpdateSourceArgs":"{{$FullBaseDir}}/WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer/",
-        "OverwriteExistingFiles":false
-    },
-    {
         "UpdateStageName":"Server Template Config File Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",

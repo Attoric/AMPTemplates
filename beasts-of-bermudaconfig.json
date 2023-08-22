@@ -22,16 +22,28 @@
         "Description": "The full name of the map Ex. Forest_Island",
         "Keywords": "map,name",
         "FieldName": "MapName",
-        "InputType": "text",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName":"/Script/BeastsOfBermuda.ServerGameInstance.MapNameOverride",
-        "IncludeInCommandLine": true,
+        "IncludeInCommandLine": false,
         "DefaultValue": "Forest_Island",
         "Placeholder": "Forest_Island",
         "Suffix": "",
-        "Hidden": true,
+        "Hidden": false,
         "SkipIfEmpty": false,
-        "EnumValues": {}
+        "EnumValues": {
+            "Bloodbath": "BloodBath",
+            "Bloodbath_Canvas": "Bloodbath_Canvas",
+            "Forest_Island": "Forest_Island",
+            "Forest_Island_Canvas": "Forest_Island_Canvas",
+            "Ancestral_Plains": "Ancestral_Plains",
+            "Ancestral_Plains_Canvas": "Ancestral_Plains_Canvas",
+            "Rival_Shores": "Rival_Shores",
+            "Rival_Shores_Canvas": "Rival_Shores_Canvas",
+            "Caldera": "Caldera",
+            "Caldera_Canvas": "Caldera_Canvas",
+            "Islatitania": "Islatitania"
+        }
     },
     {
         "DisplayName": "Game Mode",
