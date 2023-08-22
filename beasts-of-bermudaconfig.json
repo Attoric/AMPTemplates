@@ -119,5 +119,22 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {}
+    },
+    {
+        "DisplayName": "All other settings",
+        "Category": "Server Settings",
+        "Description": "Use File Manager to edit Game.ini",
+        "Keywords": "other,setting",
+        "FieldName": "otherSettingNote",
+        "InputType": "textarea",
+        "IsFlagArgument": false,
+        "ParamFieldName": "NumPlayers",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Use https://cleafspear.github.io/ to generate a config and paste the contents to Game.ini using the file manager to WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer",
+        "Placeholder": "Use https://cleafspear.github.io/ to generate a config and paste the contents to Game.ini using the file manager to WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": true,
+        "EnumValues": {}
     }
 ]
