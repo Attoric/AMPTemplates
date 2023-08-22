@@ -17,6 +17,23 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Map Name",
+        "Category": "Server Settings",
+        "Description": "The full name of the map Ex. Forest_Island",
+        "Keywords": "map,name",
+        "FieldName": "MapName",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName":"/Script/BeastsOfBermuda.ServerGameInstance.MapNameOverride",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "Forest_Island",
+        "Placeholder": "Forest_Island",
+        "Suffix": "",
+        "Hidden": true,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Game Mode",
         "Category": "Server Settings",
         "Description": "The Game Mode (Free_Roam, Life Cycle, Combat)",
