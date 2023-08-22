@@ -19,7 +19,7 @@
         "UpdateSource":"FetchURL",
         "UpdateSourceData":"https://raw.githubusercontent.com/Attoric/AMPTemplates/Custom/beasts-of-bermuda-Game.ini",
         "UpdateSourceArgs":"Game.ini",
-        "UpdateSourceTarget":"{{$FullRootDir}}\\WindowsServer\\BeastsOfBermuda\\Saved\\Config\\WindowsServer\\Game.ini",
+        "UpdateSourceTarget":"{{$FullBaseDir}}\\WindowsServer\\BeastsOfBermuda\\Saved\\Config\\WindowsServer\\Game.ini",
         "OverwriteExistingFiles":false
     }
 ]
