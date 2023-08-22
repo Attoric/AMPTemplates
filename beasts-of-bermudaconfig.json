@@ -19,7 +19,7 @@
     {
         "DisplayName": "Map Name",
         "Category": "Server Settings",
-        "Description": "The full name of the map Ex. Forest_Island",
+        "Description": "Which Map would you like to play?",
         "Keywords": "map,name",
         "FieldName": "MapName",
         "InputType": "enum",
