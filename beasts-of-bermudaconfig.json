@@ -100,22 +100,5 @@
         "Hidden": false,
         "SkipIfEmpty": true,
         "EnumValues": {}
-    },
-    {
-        "DisplayName": "Log",
-        "Category": "Server Settings",
-        "Description": "Enable Log output",
-        "Keywords": "log",
-        "FieldName": "log",
-        "InputType": "text",
-        "IsFlagArgument": false,
-        "ParamFieldName": "log",
-        "IncludeInCommandLine": true,
-        "DefaultValue": " ",
-        "Placeholder": " ",
-        "Suffix": "",
-        "Hidden": true,
-        "SkipIfEmpty": false,
-        "EnumValues": {}
     }
 ]
