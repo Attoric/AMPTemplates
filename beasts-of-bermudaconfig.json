@@ -41,9 +41,11 @@
             "Rival_Shores": "Rival_Shores",
             "Rival_Shores_Canvas": "Rival_Shores_Canvas",
             "Volcano_Bay": "Volcano_Bay",
-            "Caldera": "Caldera",
-            "Caldera_Canvas": "Caldera_Canvas",
-            "Islatitania": "Islatitania"
+            "Caldera": "DM_Caldera",
+            "Caldera_Canvas": "DM_Caldera_Canvas",
+            "Islatitania": "Islatitania",
+            "Test_Performance": "Test_Performance",
+            "Test_Map":"Test Map (Debug)"
         }
     },
     {
