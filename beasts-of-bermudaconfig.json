@@ -39,7 +39,7 @@
         "Description": "The Game Mode (Free_Roam, Life Cycle, Combat)",
         "Keywords": "game,mode",
         "FieldName": "GameMode",
-        "InputType": "text",
+        "InputType": "enum",
         "IsFlagArgument": false,
         "ParamFieldName":"/Script/BeastsOfBermuda.ServerGameInstance.GameMode",
         "IncludeInCommandLine": true,
@@ -48,7 +48,11 @@
         "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": false,
-        "EnumValues": {}
+        "EnumValues": {
+            "Free_Roam": "Free Roam",
+            "Life_Cycle": "Life Cycle",
+            "Combat": "Combat"
+        }
     },
     {
         "DisplayName": "Admin Password",
@@ -94,7 +98,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "NumPlayers",
         "IncludeInCommandLine": true,
-        "DefaultValue": "",
+        "DefaultValue": "100",
         "Placeholder": "",
         "Suffix": "",
         "Hidden": false,
