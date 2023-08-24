@@ -80,7 +80,7 @@
         "ParamFieldName":"/Script/BeastsOfBermuda.ServerGameInstance.DiscordLink",
         "IncludeInCommandLine": false,
         "DefaultValue": "",
-        "Placeholder": "Ex: yubWudJZpb",
+        "Placeholder": "Example_yubWudJZpb",
         "Suffix": "",
         "Hidden": false,
         "SkipIfEmpty": true,
