@@ -2,7 +2,7 @@
     {
         "DisplayName": "Session Name",
         "Category": "Server Settings",
-        "Description": "The name displayed in the browser",
+        "Description": "The name displayed in the browser, be sure to include '_' instead of spaces!",
         "Keywords": "session,name",
         "FieldName": "SessionName",
         "InputType": "text",
@@ -68,6 +68,23 @@
             "Life_Cycle": "Life Cycle",
             "Combat": "Combat"
         }
+    },
+    {
+        "DisplayName": "Discord Link",
+        "Category": "Server Settings",
+        "Description": "Let players click the discord button in-game to join your server! Only include the invite code not the url.",
+        "Keywords": "discord,link",
+        "FieldName": "DiscordLink",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName":"/Script/BeastsOfBermuda.ServerGameInstance.DiscordLink",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "Placeholder": "Ex: yubWudJZpb",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": true,
+        "EnumValues": {}
     },
     {
         "DisplayName": "Admin Password",
