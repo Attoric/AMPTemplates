@@ -33,7 +33,7 @@ App.ExecutableLinux=/usr/bin/wine
 App.WorkingDir=882430
 App.LinuxCommandLineArgs="./WindowsServer\BeastsOfBermuda\Binaries\Win64\BeastsOfBermudaServer.exe"
 App.WindowsCommandLineArgs=
-App.CommandLineArgs={{$PlatformArgs}} -Port={{$GamePort}} -QueryPort={{$SteamQueryPort}} -MultiHome={{$ApplicationIPBinding}} {{$FormattedArgs}} -stdout -FullStdOutLogOutput
+App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}} -MapName Rival_Shores_Canvas ?Port={{$MainGamePort}}?QueryPort={{$SteamQueryPort}} -stdout -FullStdOutLogOutput
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"719890","WINEPREFIX":"{{$FullRootDir}}.wine","WINEARCH":"win64","WINEDEBUG":"-all"}
@@ -50,8 +50,8 @@ App.LiveSettingChangeCommandFormat=set {0} "{1}"
 App.ApplicationIPBinding=0.0.0.0
 App.Ports=@IncludeJson[beasts-of-bermudaports.json]
 App.AdminPortRef=0
-App.PrimaryApplicationPortRef=GamePort
-App.UniversalSleepApplicationUDPPortRef=GamePort
+App.PrimaryApplicationPortRef=MainGamePort
+App.UniversalSleepApplicationUDPPortRef=MainGamePort
 App.UniversalSleepSteamQueryPortRef=SteamQueryPort
 App.MaxUsers=32
 App.UseRandomAdminPassword=False
