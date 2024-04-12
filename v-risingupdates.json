@@ -31,9 +31,9 @@
     },
     {
         "UpdateStageName":"Download BepInEx From Thunderstore",
-        "UpdateSourcePlatform":"Windows",
+        "UpdateSourcePlatform":"All",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://v-rising.thunderstore.io/package/download/BepInEx/BepInExPack_V_Rising/1.668.5/",
+        "UpdateSourceData":"https://gcdn.thunderstore.io/live/repository/packages/",
         "UpdateSourceArgs":"BepInEx-BepInExPack_V_Rising-1.668.5.zip",
         "UpdateSourceTarget":"{{$FullBaseDir}}",
         "UnzipUpdateSource":true,
@@ -52,10 +52,46 @@
         "UpdateSourceConditionValue":"true"
     },
     {
+        "UpdateStageName":"BepInEx Copy",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c '\\cp -rf ./v-rising/1829350/BepInExPack_V_Rising/* ./v-rising/1829350/ && rm -rf ./v-rising/1829350/BepInExPack_V_Rising/'",
+        "UpdateSourceConditionSetting":"BepInExEnabled",
+        "UpdateSourceConditionValue":"true"
+    },
+    {
         "UpdateStageName":"Initialise Wine",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'WINEPREFIX=\"{{$FullRootDir}}.wine\" WINEARCH=win64 /usr/bin/wineboot --init --update'"
+        "UpdateSourceArgs":"-c 'WINEPREFIX=\"{{$FullRootDir}}.wine\" WINEARCH=win64 WINEDLLOVERRIDES=\"mscoree,mshtml=\" WINEDEBUG=-all /usr/bin/wineboot --init --update'"
+    },
+    {
+        "UpdateStageName":"Disable Prefix Sound",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'cd v-rising && wget -q -N https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks && chmod +x winetricks; export WINEPREFIX=\"{{$FullRootDir}}.wine\"; export WINEARCH=win64; ./winetricks sound=disabled > winescript_log.txt 2>&1'"
+    },
+    {
+        "UpdateStageName":"Winescript Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://raw.githubusercontent.com/CubeCoders/AMPTemplates/main/v-risingwinescript.sh",
+        "UpdateSourceArgs":"winescript.sh",
+        "UpdateSourceTarget":"{{$FullInstanceDir}}",
+        "OverwriteExistingFiles":true,
+        "UpdateSourceConditionSetting":"BepInExEnabled",
+        "UpdateSourceConditionValue":"true"
+    },
+    {
+        "UpdateStageName":"Install Windows Components",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"./winescript.sh",
+        "UpdateSourceConditionSetting":"BepInExEnabled",
+        "UpdateSourceConditionValue":"true"
     }
 ]
