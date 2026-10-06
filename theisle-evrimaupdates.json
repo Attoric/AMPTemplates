@@ -27,5 +27,17 @@
         "UpdateSourceArgs":"AMP_Game.ini",
         "UpdateSourceTarget":"{{$FullRootDir}}",
         "OverwriteExistingFiles":true
+    },
+    {
+        "UpdateStageName":"IslePilot Download (Linux, optional)",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://islepilot.eu/cdn/plugin/libisleplugin.so",
+        "UpdateSourceArgs":"libisleplugin.so",
+        "UpdateSourceTarget":"{{$FullBaseDir}}TheIsle/Binaries/Linux/",
+        "UpdateSourceConditionSetting":"IslePilotPreload",
+        "UpdateSourceConditionValue":"./TheIsle/Binaries/Linux/libisleplugin.so",
+        "OverwriteExistingFiles":true,
+        "SkipOnFailure":false
     }
 ]

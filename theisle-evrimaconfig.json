@@ -1,5 +1,20 @@
 [
     {
+        "DisplayName":"Enable IslePilot",
+        "Category":"Server Settings",
+        "Description":"Optional native Linux integration only (ignored on Windows). Enable, then stop the server, Update and start it to download/load IslePilot. Disable and restart to stop loading it; plugin config/data are retained. If the library is missing or unloadable, Linux may warn and start without IslePilot. Compatibility with the selected game branch/build is unverified. Use vendor Linux documentation for configuration.",
+        "Keywords":"islepilot,plugin,linux,preload",
+        "FieldName":"IslePilotPreload",
+        "InputType":"checkbox",
+        "ParamFieldName":"IslePilotPreload",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"",
+        "EnumValues":{
+            "False":"",
+            "True":"./TheIsle/Binaries/Linux/libisleplugin.so"
+        }
+    },
+    {
         "DisplayName":"Queue Port",
         "Category":"Server Settings",
         "Description":"",
