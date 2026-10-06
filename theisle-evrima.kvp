@@ -25,8 +25,8 @@ App.WorkingDir=412680
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
 App.CommandLineArgs=TheIsle {{$PlatformArgs}} ?Port={{$GamePort}}?QueryPort={{$QueryPort}}?MaxPlayers={{$MaxUsers}} {{$FormattedArgs}} -stdout -FullStdOutLogOutput -ini:Engine:[EpicOnlineServices]:DedicatedServerClientId=xyza7891gk5PRo3J7G9puCJGFJjmEguW -ini:Engine:[EpicOnlineServices]:DedicatedServerClientSecret=pKWl6t5i9NJK8gTpVlAxzENZ65P8hYzodV8Dqe5Rlc8
-App.AppSettings={}
-App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"376210"}
+App.AppSettings={"IslePilotPreload":""}
+App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}TheIsle/Binaries/Linux:{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","LD_PRELOAD":"{{IslePilotPreload}}","SteamAppId":"376210"}
 App.CommandLineParameterFormat=-{0}={1}
 App.CommandLineParameterDelimiter= 
 App.ExitMethod=OS_CLOSE

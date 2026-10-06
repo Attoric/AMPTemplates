@@ -36,6 +36,22 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Enable IslePilot",
+        "Category": "The Isle:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Optional native Linux integration only. Windows is not supported here: the vendor uses the IslePilot Launcher to download IslePilotPlugin.dll and inject it into the game process, which AMP Generic cannot do while remaining the process owner. Enable, then stop, Update and start to download/load on Linux. Disable and restart to stop loading; plugin config/data are retained. Keep AMP as the only start/stop/restart controller (do not use the vendor launcher or panel Start/Stop to spawn or kill the process). IslePilot has no AMP API. Plugin anti-crash may exit the game (exit 90); AMP may then auto-retry. Compatibility with the selected game branch/build is unverified. Use vendor Linux documentation for configuration.",
+        "Keywords": "islepilot,plugin,linux,preload",
+        "FieldName": "IslePilotPreload",
+        "InputType": "checkbox",
+        "ParamFieldName": "IslePilotPreload",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "./TheIsle/Binaries/Linux/libisleplugin.so"
+        }
+    },
+    {
         "DisplayName": "Server Map/Branch",
         "Category": "The Isle:stadia_controller",
         "Subcategory": "Server:dns:1",
