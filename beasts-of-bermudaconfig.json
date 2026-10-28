@@ -1005,7 +1005,7 @@
         "DisplayName": "Additional Game.ini Settings",
         "Category": "Admin:security",
         "Subcategory": "Additional Game.ini:tune:2",
-        "Description": "Notes for list-style Game.ini lines that AMP does not manage as individual settings. Keep those lines in Game.ini; start-time merge updates mapped keys in place and leaves the rest. Typical extras: CreatureLimits, GrowthLimits, AllowedSpeciesGroups, DisabledAITypes, WorldEventBuffsToNotUse, AdminRanks, AdminCommandRules, ServerAdmins, PlayerChatColors, PlayerChatTags, AdminAllowedCommands, AdminBlockedCommands, and ProfanityWords. One line per entry, including !Key=ClearArray / +Key=... where required. After editing Game.ini, use Import Configuration to load mapped AMP settings.",
+        "Description": "Notes for list-style Game.ini lines that AMP does not manage as individual settings. Keep those lines in Game.ini; start-time merge updates mapped keys in place and leaves the rest. Typical extras: CreatureLimits, GrowthLimits, AllowedSpeciesGroups, DisabledAITypes, WorldEventBuffsToNotUse, AdminRanks, AdminCommandRules, ServerAdmins, PlayerChatColors, PlayerChatTags, AdminAllowedCommands, AdminBlockedCommands, and ProfanityWords. Game RCON keys (bLiveMessagesToRCON, CommunicationPort, IP4Binding) are left in Game.ini if present; they are not AMP settings. One line per entry, including !Key=ClearArray / +Key=... where required. After editing Game.ini, use Import Configuration to load mapped AMP settings.",
         "Keywords": "custom,settings,creaturelimits,adminranks,serveradmins",
         "FieldName": "CustomSettings",
         "InputType": "Textarea",
@@ -1013,21 +1013,6 @@
         "DefaultValue": "",
         "EnumValues": {},
         "ExcludeFromImport": true
-    },
-    {
-        "DisplayName": "RCON Live Messages",
-        "Category": "Advanced:build",
-        "Subcategory": "RCON:lan:2",
-        "Description": "If enabled, the server sends live messages to RCON ([/Script/BeastsOfBermuda.BBGameModeBase] bLiveMessagesToRCON). CommunicationPort and IP4Binding stay in Game.ini under [/Script/BeastsOfBermuda.RCONHandler] if you use the listener.",
-        "Keywords": "rcon,live,messages,blivemessagestorcon",
-        "FieldName": "bLiveMessagesToRCON",
-        "InputType": "checkbox",
-        "ParamFieldName": "/Script/BeastsOfBermuda.BBGameModeBase.bLiveMessagesToRCON",
-        "DefaultValue": "false",
-        "EnumValues": {
-            "False": "false",
-            "True": "true"
-        }
     },
     {
         "DisplayName": "Enable Chat Webhook",
