@@ -14,5 +14,33 @@
         "Importable": true,
         "ConfigFormat": "{0}={1}",
         "ConfigFormatRegex": "^(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$"
+    },
+    {
+        "ConfigFile": "WindowsServer/BeastsOfBermuda/Config/Server/MessageOfTheDay.txt",
+        "ConfigType": "kvp",
+        "Importable": true,
+        "ConfigFormat": "{0}{1}",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "": "MessageOfTheDay"
+                }
+            }
+        ]
+    },
+    {
+        "ConfigFile": "LinuxServer/BeastsOfBermuda/Config/Server/MessageOfTheDay.txt",
+        "ConfigType": "kvp",
+        "Importable": true,
+        "ConfigFormat": "{0}{1}",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "": "MessageOfTheDay"
+                }
+            }
+        ]
     }
 ]
