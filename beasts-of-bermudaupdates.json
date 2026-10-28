@@ -18,6 +18,40 @@
         "SkipOnFailure": false
     },
     {
+        "UpdateStageName": "MOTD Directory Creation (Windows)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}WindowsServer/BeastsOfBermuda/Config/Server",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "MOTD File Creation (Windows)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateFile",
+        "UpdateSourceData": "Welcome to this Beasts of Bermuda server.",
+        "UpdateSourceArgs": "{{$FullBaseDir}}WindowsServer/BeastsOfBermuda/Config/Server/MessageOfTheDay.txt",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "MOTD Directory Creation (Linux)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}LinuxServer/BeastsOfBermuda/Config/Server",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "MOTD File Creation (Linux)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "CreateFile",
+        "UpdateSourceData": "Welcome to this Beasts of Bermuda server.",
+        "UpdateSourceArgs": "{{$FullBaseDir}}LinuxServer/BeastsOfBermuda/Config/Server/MessageOfTheDay.txt",
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
+    },
+    {
         "UpdateStageName": "Set Executable Flag",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SetExecutableFlag",

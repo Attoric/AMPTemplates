@@ -1,7 +1,7 @@
 [
     {
         "DisplayName": "Session Name",
-        "Category": "Beasts of Bermuda:stadia_controller",
+        "Category": "Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "Sets the server name displayed in the server browser. Use underscores (_) instead of spaces!",
         "Keywords": "session,name,sessionname",
@@ -10,14 +10,15 @@
         "ParamFieldName": "SessionName",
         "IncludeInCommandLine": true,
         "DefaultValue": "AMP_Powered_Beasts_of_Bermuda_Server",
+        "EnumValues": {},
         "Placeholder": "AMP_Powered_Beasts_of_Bermuda_Server",
-        "EnumValues": {}
+        "ExcludeFromImport": true
     },
     {
         "DisplayName": "Map Name",
-        "Category": "Beasts of Bermuda:stadia_controller",
+        "Category": "Server:dns",
         "Subcategory": "Server:dns:1",
-        "Description": "Sets the initial map to load on the server",
+        "Description": "Sets the initial map loaded on the server (Game.ini MapNameOverride). This is the actual map, not the server-browser label.",
         "Keywords": "map,name,override,mapnameoverride",
         "FieldName": "MapNameOverride",
         "InputType": "enum",
@@ -39,15 +40,15 @@
             "Scorched_Valley": "Scorched Valley",
             "Temporal_Drift": "Temporal Drift",
             "Test_Performance": "Test Performance",
-            "BB_Test_Map": "Test Map (Debug)",            
-            "Volcano_Bay": "Volcano Bay"            
+            "BB_Test_Map": "Test Map (Debug)",
+            "Volcano_Bay": "Volcano Bay"
         }
     },
     {
         "DisplayName": "Display Map Name Mode",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets whether to display the actual Map Name in the server browser, or instead the Custom Display Map Name. This doesn't affect the actual map loaded on the server",
+        "Category": "Server:dns",
+        "Subcategory": "Server Browser:public:2",
+        "Description": "Sets whether to display the actual map name in the server browser, or instead the Custom Display Map Name. This does not change the map that is loaded.",
         "Keywords": "display,map,name,mode,custom,mapname",
         "FieldName": "MapName",
         "InputType": "enum",
@@ -57,27 +58,29 @@
         "EnumValues": {
             "{{MapNameOverride}}": "Use Map Name (default)",
             "{{CustomMapName}}": "Use Custom Display Map Name"
-        }
+        },
+        "ExcludeFromImport": true
     },
     {
         "DisplayName": "Custom Display Map Name",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets a custom map name to display in the server browser, if 'Use Custom Map Display Map Name' is selected under Display Map Name Mode",
+        "Category": "Server:dns",
+        "Subcategory": "Server Browser:public:2",
+        "Description": "Sets a custom map name to display in the server browser, if Use Custom Display Map Name is selected under Display Map Name Mode",
         "Keywords": "custom,display,map,name,mapname",
         "FieldName": "CustomMapName",
         "InputType": "text",
         "ParamFieldName": "CustomMapName",
         "IncludeInCommandLine": false,
         "DefaultValue": "",
+        "EnumValues": {},
         "Placeholder": "MyMapName",
-        "EnumValues": {}
+        "ExcludeFromImport": true
     },
     {
         "DisplayName": "Game Mode",
-        "Category": "Beasts of Bermuda:stadia_controller",
+        "Category": "Server:dns",
         "Subcategory": "Server:dns:1",
-        "Description": "Sets the game mode for the server",
+        "Description": "Sets the game mode for the server (command line and Game.ini GameMode)",
         "Keywords": "game,mode,gamemode",
         "FieldName": "GameMode",
         "InputType": "enum",
@@ -92,7 +95,7 @@
     },
     {
         "DisplayName": "Game Mode",
-        "Category": "Beasts of Bermuda:stadia_controller",
+        "Category": "Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "",
         "Keywords": "",
@@ -103,8 +106,25 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Preferred Game Experience",
+        "Category": "Server:dns",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets PvP/PvE rules. PvPvE is classic survival. PvP enables more PvP features. PvE disables intimidation and damage except via dueling (overridden to PvPvE on Titania).",
+        "Keywords": "preferred,game,experience,pvp,pve,preferredgameexperience",
+        "FieldName": "PreferredGameExperience",
+        "InputType": "enum",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.PreferredGameExperience",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "EGameExperience::PvPvE",
+        "EnumValues": {
+            "EGameExperience::PvPvE": "PvPvE (default)",
+            "EGameExperience::PvP": "PvP",
+            "EGameExperience::PvE": "PvE"
+        }
+    },
+    {
         "DisplayName": "Server Password",
-        "Category": "Beasts of Bermuda:stadia_controller",
+        "Category": "Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "Sets the password required for players to join the server",
         "Keywords": "server,password,serverpassword",
@@ -113,12 +133,13 @@
         "ParamFieldName": "ServerPassword",
         "IncludeInCommandLine": true,
         "DefaultValue": "",
+        "EnumValues": {},
         "SkipIfEmpty": true,
-        "EnumValues": {}
+        "ExcludeFromImport": true
     },
     {
         "DisplayName": "Admin Password",
-        "Category": "Beasts of Bermuda:stadia_controller",
+        "Category": "Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "Sets the admin password. Default is a strong random password",
         "Keywords": "admin,password,adminpassword",
@@ -127,12 +148,13 @@
         "ParamFieldName": "AdminPassword",
         "IncludeInCommandLine": true,
         "DefaultValue": "{{newguid()}}",
+        "EnumValues": {},
         "SkipIfEmpty": true,
-        "EnumValues": {}
+        "ExcludeFromImport": true
     },
     {
         "DisplayName": "Player Limit",
-        "Category": "Beasts of Bermuda:stadia_controller",
+        "Category": "Server:dns",
         "Subcategory": "Server:dns:1",
         "Description": "Sets the maximum number of players that can connect to the server at one time",
         "Keywords": "maximum,player,limit,numplayers",
@@ -143,30 +165,1222 @@
         "DefaultValue": "32",
         "Placeholder": "32",
         "Suffix": "players",
-        "EnumValues": {}
+        "EnumValues": {},
+        "ExcludeFromImport": true
     },
     {
-        "DisplayName": "Discord Link",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets a link for players to click in-game to join a Discord server. Only include the invite code, not the full URL",
+        "DisplayName": "Display Discord Link",
+        "Category": "Server:dns",
+        "Subcategory": "Server Browser:public:2",
+        "Description": "If enabled, players can open the Discord invite from the in-game interface. Requires Discord Invite Code to be set.",
+        "Keywords": "discord,link,display,bdisplaydiscordlink",
+        "FieldName": "bDisplayDiscordLink",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisplayDiscordLink",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Discord Invite Code",
+        "Category": "Server:dns",
+        "Subcategory": "Server Browser:public:2",
+        "Description": "Invite code only, not the full URL (the part after discord.gg/). Shown in-game when Display Discord Link is enabled.",
         "Keywords": "discord,link,discordlink",
         "FieldName": "DiscordLink",
         "InputType": "text",
         "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.DiscordLink",
+        "IncludeInCommandLine": false,
         "DefaultValue": "",
-        "Placeholder": "yubWudJZpb",
+        "EnumValues": {},
+        "Placeholder": "yubWudJZpb"
+    },
+    {
+        "DisplayName": "Require Steam Group To Join",
+        "Category": "Server:dns",
+        "Subcategory": "Server:dns:1",
+        "Description": "If enabled, players must be in the Steam group named below or they are denied access.",
+        "Keywords": "steam,group,require,brequiresteamgrouptojoin",
+        "FieldName": "bRequireSteamGroupToJoin",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bRequireSteamGroupToJoin",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Steam Group Name",
+        "Category": "Server:dns",
+        "Subcategory": "Server:dns:1",
+        "Description": "Steam group name used with Require Steam Group To Join, and shown in-game when set.",
+        "Keywords": "steam,group,name,steamgroupname",
+        "FieldName": "SteamGroupName",
+        "InputType": "text",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.SteamGroupName",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Placeholder": "MySteamGroup"
+    },
+    {
+        "DisplayName": "Autosave Interval",
+        "Category": "Server:dns",
+        "Subcategory": "Server:dns:1",
+        "Description": "Seconds between automatic saves. The game clamps this to a minimum of 30 seconds.",
+        "Keywords": "autosave,save,interval,autosavetime",
+        "FieldName": "AutosaveTime",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.SaveSystem.AutosaveTime",
+        "DefaultValue": "135",
+        "EnumValues": {},
+        "MinValue": "30",
+        "Suffix": "seconds",
+        "Placeholder": "135"
+    },
+    {
+        "DisplayName": "Food Drain Difficulty",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Food drain rate. Easy is half, Normal is default, Hard is double, Expert is triple.",
+        "Keywords": "food,drain,difficulty,fooddraindifficulty",
+        "FieldName": "FoodDrainDifficulty",
+        "InputType": "enum",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.FoodDrainDifficulty",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "EGameDifficulty::Normal",
+        "EnumValues": {
+            "EGameDifficulty::Easy": "Easy (half rate)",
+            "EGameDifficulty::Normal": "Normal (default)",
+            "EGameDifficulty::Hard": "Hard (double rate)",
+            "EGameDifficulty::Expert": "Expert (triple rate)"
+        }
+    },
+    {
+        "DisplayName": "Water Drain Difficulty",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Water drain rate. Easy is half, Normal is default, Hard is double, Expert is triple.",
+        "Keywords": "water,drain,difficulty,waterdraindifficulty",
+        "FieldName": "WaterDrainDifficulty",
+        "InputType": "enum",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.WaterDrainDifficulty",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "EGameDifficulty::Normal",
+        "EnumValues": {
+            "EGameDifficulty::Easy": "Easy (half rate)",
+            "EGameDifficulty::Normal": "Normal (default)",
+            "EGameDifficulty::Hard": "Hard (double rate)",
+            "EGameDifficulty::Expert": "Expert (triple rate)"
+        }
+    },
+    {
+        "DisplayName": "Water Dirtiness Difficulty",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "How quickly water becomes dirty. Easy is half, Normal is default, Hard is double, Expert is triple.",
+        "Keywords": "water,dirtiness,difficulty,waterdirtinessdifficulty",
+        "FieldName": "WaterDirtinessDifficulty",
+        "InputType": "enum",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.WaterDirtinessDifficulty",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "EGameDifficulty::Normal",
+        "EnumValues": {
+            "EGameDifficulty::Easy": "Easy (half rate)",
+            "EGameDifficulty::Normal": "Normal (default)",
+            "EGameDifficulty::Hard": "Hard (double rate)",
+            "EGameDifficulty::Expert": "Expert (triple rate)"
+        }
+    },
+    {
+        "DisplayName": "Foliage Spawn Speed",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Multiplier for foliage spawn/regrowth relative to the normal rate.",
+        "Keywords": "foliage,spawn,speed,foliagespawnspeed",
+        "FieldName": "FoliageSpawnSpeed",
+        "InputType": "enum",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.FoliageSpawnSpeed",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "EGrowthRate::Normal",
+        "EnumValues": {
+            "EGrowthRate::VerySlow": "Very Slow (1/2x)",
+            "EGrowthRate::Slow": "Slow (3/4x)",
+            "EGrowthRate::Normal": "Normal",
+            "EGrowthRate::Fast": "Fast (1 1/2x)",
+            "EGrowthRate::VeryFast": "Very Fast (2x)"
+        }
+    },
+    {
+        "DisplayName": "Day Length",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Length of a full day/night cycle in seconds (Cleafspear default 4441).",
+        "Keywords": "day,length,cycle,daylength",
+        "FieldName": "DayLength",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.DayLength",
+        "DefaultValue": "4441",
+        "EnumValues": {},
+        "MinValue": "1",
+        "Suffix": "seconds",
+        "Placeholder": "4441"
+    },
+    {
+        "DisplayName": "Carcass Spawn Rate",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Multiplier for how much meat spawns over time. Cleafspear maximum is 8x normal.",
+        "Keywords": "carcass,spawn,rate,carcassratemultiplier",
+        "FieldName": "CarcassRateMultiplier",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.CarcassRateMultiplier",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Carcass Spawn Ratio",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Size versus number of carcasses. Closer to 0: large but rare. Closer to 2: small but often.",
+        "Keywords": "carcass,spawn,ratio,carcassspawnratio",
+        "FieldName": "CarcassSpawnRatio",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.CarcassSpawnRatio",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Disable Restless Debuff",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, removes the restless debuff while in caves.",
+        "Keywords": "restless,debuff,caves,bdisablerestlessdebuff",
+        "FieldName": "bDisableRestlessDebuff",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableRestlessDebuff",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Random Egg Spawns",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, abandoned eggs no longer spawn around the map.",
+        "Keywords": "egg,spawn,random,bdisablerandomeggspawns",
+        "FieldName": "bDisableRandomEggSpawns",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableRandomEggSpawns",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Abandoned Egg Spawn Chance",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Chance a carcass spawn generates an abandoned egg. 0 stops egg spawns; 1 always spawns eggs instead of carcasses.",
+        "Keywords": "egg,spawn,chance,randomeggspawnchance",
+        "FieldName": "RandomEggSpawnChance",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.RandomEggSpawnChance",
+        "DefaultValue": "0.05",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "0.05"
+    },
+    {
+        "DisplayName": "Tunnel Network Despawn Time",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Seconds a burrow network remains after its last edit. Cleafspear default is 3 days (259200). Networks are checked every 5 minutes.",
+        "Keywords": "tunnel,burrow,despawn,tunnelnetworkdespawntime",
+        "FieldName": "TunnelNetworkDespawnTime",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.TunnelNetworkDespawnTime",
+        "DefaultValue": "259200",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Suffix": "seconds",
+        "Placeholder": "259200"
+    },
+    {
+        "DisplayName": "Disable Portals",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, portals are disabled.",
+        "Keywords": "portals,disable,bportalsdisabled",
+        "FieldName": "bPortalsDisabled",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bPortalsDisabled",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Spawn World Events",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, world events can spawn.",
+        "Keywords": "world,events,spawn,bspawnworldevents",
+        "FieldName": "bSpawnWorldEvents",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bSpawnWorldEvents",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "World Event Prep Time",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Minutes from when a world event spawns until it starts.",
+        "Keywords": "world,event,prep,worldeventpreptime",
+        "FieldName": "WorldEventPrepTime",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.WorldEventPrepTime",
+        "DefaultValue": "30",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Suffix": "minutes",
+        "Placeholder": "30"
+    },
+    {
+        "DisplayName": "World Event Duration",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "World event duration in minutes.",
+        "Keywords": "world,event,duration,worldeventduration",
+        "FieldName": "WorldEventDuration",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.WorldEventDuration",
+        "DefaultValue": "45",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Suffix": "minutes",
+        "Placeholder": "45"
+    },
+    {
+        "DisplayName": "World Event Spacing",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Minutes between world events.",
+        "Keywords": "world,event,spacing,worldeventspacing",
+        "FieldName": "WorldEventSpacing",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.WorldEventSpacing",
+        "DefaultValue": "120",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Suffix": "minutes",
+        "Placeholder": "120"
+    },
+    {
+        "DisplayName": "Ocean Height Adjustment",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "Adjusts the default ocean level (WeatherControllerBase OceanHeightAdd).",
+        "Keywords": "ocean,height,oceanheightadd",
+        "FieldName": "OceanHeightAdd",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.OceanHeightAdd",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Disable Leaderboards",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, leaderboards are disabled.",
+        "Keywords": "leaderboard,disable,bdisableleaderboard",
+        "FieldName": "bDisableLeaderboard",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableLeaderboard",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Revenge-Kill Protection",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, players can spawn onto creatures close to their last death point.",
+        "Keywords": "revenge,kill,protection,bdisablerevengekillprotection",
+        "FieldName": "bDisableRevengeKillProtection",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableRevengeKillProtection",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Random Names Command",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, disallows the UseRandomName console command.",
+        "Keywords": "random,name,bdisableuserandomname",
+        "FieldName": "bDisableUseRandomName",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableUseRandomName",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Character Death",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "World:public:1",
+        "Description": "If enabled, character death is disabled (SaveSystem).",
+        "Keywords": "death,character,bdisablecharacterdeath",
+        "FieldName": "bDisableCharacterDeath",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.SaveSystem.bDisableCharacterDeath",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Enable Forest Fires",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Affects storm- and admin-spawned fires.",
+        "Keywords": "forest,fires,bspawnforestfires",
+        "FieldName": "bSpawnForestFires",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bSpawnForestFires",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Cap Storm Surge",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Keeps flooding from getting too high. Disable to allow superfloods.",
+        "Keywords": "storm,surge,cap,bcapstormsurge",
+        "FieldName": "bCapStormSurge",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.bCapStormSurge",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Storm Surge Multiplier",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "How high flood surge goes. 0 disables flooding. Values above 1 multiply flood height.",
+        "Keywords": "storm,surge,multiplier,stormsurgemultiplier",
+        "FieldName": "StormSurgeMultiplier",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.StormSurgeMultiplier",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Spawn Tornadoes",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Enables tornado spawning during high-wind storms.",
+        "Keywords": "tornado,spawn,bspawnstornados",
+        "FieldName": "bSpawnsTornados",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.bSpawnsTornados",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Stressful Storms",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Enables stress caused by severe weather.",
+        "Keywords": "storm,stress,bstormscausestress",
+        "FieldName": "bStormsCauseStress",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.bStormsCauseStress",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Weather System Speed",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "How fast the weather system runs. Higher is faster storms; lower is drawn-out weather.",
+        "Keywords": "weather,speed,speedmodifier",
+        "FieldName": "SpeedModifier",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.SpeedModifier",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Weather System Intensity",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "How severe weather is. Higher is more extreme; lower is calmer.",
+        "Keywords": "weather,intensity,intensitymodifier",
+        "FieldName": "IntensityModifier",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.IntensityModifier",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Weather System Period",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "How often storms spawn. Lower means storms back-to-back; higher means longer gaps.",
+        "Keywords": "weather,period,storm,spacing,stormspacingmultiplier",
+        "FieldName": "StormSpacingMultiplier",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.StormSpacingMultiplier",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Rain Commonness",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Relative chance of rain. 0 disables this weather type.",
+        "Keywords": "rain,weather,raincommonness",
+        "FieldName": "RainCommonness",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.RainCommonness",
+        "DefaultValue": "5",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "5"
+    },
+    {
+        "DisplayName": "Fog Commonness",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Relative chance of fog. 0 disables this weather type.",
+        "Keywords": "fog,weather,fogcommonness",
+        "FieldName": "FogCommonness",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.FogCommonness",
+        "DefaultValue": "2",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "2"
+    },
+    {
+        "DisplayName": "Overcast Commonness",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Relative chance of overcast. 0 disables this weather type.",
+        "Keywords": "overcast,weather,overcastcommonness",
+        "FieldName": "OvercastCommonness",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.OvercastCommonness",
+        "DefaultValue": "2",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "2"
+    },
+    {
+        "DisplayName": "Dry Lightning Commonness",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Weather:cloud:2",
+        "Description": "Relative chance of dry lightning. 0 disables this weather type.",
+        "Keywords": "lightning,dry,weather,drylightningcommonness",
+        "FieldName": "DryLightningCommonness",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.WeatherControllerBase.DryLightningCommonness",
+        "DefaultValue": "1",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1"
+    },
+    {
+        "DisplayName": "Disable AI Spawns",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "AI:smart_toy:3",
+        "Description": "Disables all AI spawns, including map-editor placed spawners.",
+        "Keywords": "ai,spawn,disable,bdisableaispawning",
+        "FieldName": "bDisableAISpawning",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableAISpawning",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "AI Spawn Rate Multiplier",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "AI:smart_toy:3",
+        "Description": "Multiplies how often the AI respawn tick happens. Lower values respawn AI more frequently.",
+        "Keywords": "ai,spawn,rate,aispawnratemultiplier",
+        "FieldName": "AISpawnRateMultiplier",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.AISpawnRateMultiplier",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "AI Spawn Cap Multiplier",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "AI:smart_toy:3",
+        "Description": "Multiplies how many AI may be active in each spawn region. Higher values allow more AI at cap.",
+        "Keywords": "ai,spawn,cap,aispawncapmultiplier",
+        "FieldName": "AISpawnCapMultiplier",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.AISpawnCapMultiplier",
+        "DefaultValue": "1.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "1.0"
+    },
+    {
+        "DisplayName": "Use Hard Group Limits",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Groups:groups:4",
+        "Description": "If enabled, groups cannot exceed creature caps (young that hatch into a full group are ejected). If disabled, groups can exceed caps and adults at the limit get a stress debuff.",
+        "Keywords": "group,hard,limits,busehardgrouplimits",
+        "FieldName": "bUseHardGroupLimits",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bUseHardGroupLimits",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Use Mix Group Caps",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Groups:groups:4",
+        "Description": "If enabled, group caps count all members regardless of species. If disabled, only same-species members count.",
+        "Keywords": "mix,herd,group,caps,busemixedherdcaps",
+        "FieldName": "bUseMixedHerdCaps",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bUseMixedHerdCaps",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Ignore Group Species Check On Login",
+        "Category": "Gameplay:joystick",
+        "Subcategory": "Groups:groups:4",
+        "Description": "If enabled, skips the group species check when a player logs in.",
+        "Keywords": "group,species,login,bforceignoregroupspeciescheckonlogin",
+        "FieldName": "bForceIgnoreGroupSpeciesCheckOnLogin",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bForceIgnoreGroupSpeciesCheckOnLogin",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Growth Rate",
+        "Category": "Growth & Survival:spa",
+        "Subcategory": "Growth:spa:1",
+        "Description": "How fast player dinosaurs grow relative to the normal rate.",
+        "Keywords": "growth,rate,growthrate",
+        "FieldName": "GrowthRate",
+        "InputType": "enum",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.GrowthRate",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "EGrowthRate::Normal",
+        "EnumValues": {
+            "EGrowthRate::VerySlow": "Very Slow (1/2x)",
+            "EGrowthRate::Slow": "Slow (3/4x)",
+            "EGrowthRate::Normal": "Normal",
+            "EGrowthRate::Fast": "Fast (1 1/2x)",
+            "EGrowthRate::VeryFast": "Very Fast (2x)"
+        }
+    },
+    {
+        "DisplayName": "Growth Limit",
+        "Category": "Growth & Survival:spa",
+        "Subcategory": "Growth:spa:1",
+        "Description": "Server-wide growth cap. Values past 2 are rarely reached; past 1.2 growth is very slow.",
+        "Keywords": "growth,limit,growthlimit",
+        "FieldName": "GrowthLimit",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.GrowthLimit",
+        "DefaultValue": "100.0",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "100.0"
+    },
+    {
+        "DisplayName": "Skin Lock Growth Threshold",
+        "Category": "Growth & Survival:spa",
+        "Subcategory": "Growth:spa:1",
+        "Description": "Max growth at which players can still edit their skin (Skins SkinLockGrowthThreshold).",
+        "Keywords": "skin,lock,growth,skinlockgrowththreshold",
+        "FieldName": "SkinLockGrowthThreshold",
+        "InputType": "number",
+        "ParamFieldName": "Skins.SkinLockGrowthThreshold",
+        "DefaultValue": "0.8",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Placeholder": "0.8"
+    },
+    {
+        "DisplayName": "Max Talents Allowed",
+        "Category": "Growth & Survival:spa",
+        "Subcategory": "Growth:spa:1",
+        "Description": "Maximum talents a creature may have. -1 disables the limit. Creatures over the limit must remove talents.",
+        "Keywords": "talents,max,maxtalentsallowed",
+        "FieldName": "MaxTalentsAllowed",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.MaxTalentsAllowed",
+        "DefaultValue": "-1",
+        "EnumValues": {},
+        "Placeholder": "-1"
+    },
+    {
+        "DisplayName": "Disable Resurrections",
+        "Category": "Growth & Survival:spa",
+        "Subcategory": "Survival:restaurant:2",
+        "Description": "Disables the resurrection system. Does not remove deities from the map.",
+        "Keywords": "resurrection,disable,bdisableresurrections",
+        "FieldName": "bDisableResurrections",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableResurrections",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Reincarnations",
+        "Category": "Growth & Survival:spa",
+        "Subcategory": "Survival:restaurant:2",
+        "Description": "Disables the reincarnation system. Does not remove deities from the map.",
+        "Keywords": "reincarnation,disable,bdisablereincarnations",
+        "FieldName": "bDisableReincarnations",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableReincarnations",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Global Chat",
+        "Category": "Chat & MOTD:forum",
+        "Subcategory": "Chat:forum:1",
+        "Description": "If enabled, global chat is disabled. Local and group chat remain available.",
+        "Keywords": "global,chat,disable,bdisableglobalchat",
+        "FieldName": "bDisableGlobalChat",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableGlobalChat",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Disable Local Chat",
+        "Category": "Chat & MOTD:forum",
+        "Subcategory": "Chat:forum:1",
+        "Description": "If enabled, local chat is disabled.",
+        "Keywords": "local,chat,disable,bdisablelocalchat",
+        "FieldName": "bDisableLocalChat",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisableLocalChat",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Show Message of the Day",
+        "Category": "Chat & MOTD:forum",
+        "Subcategory": "Message of the Day:mail:2",
+        "Description": "If enabled, players see MessageOfTheDay.txt on login (Game.ini bDisplayIntroMessage). The server does not create that file itself; AMP creates Config/Server/MessageOfTheDay.txt when missing.",
+        "Keywords": "motd,intro,message,bdisplayintromessage",
+        "FieldName": "bDisplayIntroMessage",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bDisplayIntroMessage",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Message of the Day",
+        "Category": "Chat & MOTD:forum",
+        "Subcategory": "Message of the Day:mail:2",
+        "Description": "Plain-text MOTD shown on login when Show Message of the Day is enabled. Multiline is supported. Optional tags: <red>text</>, <green>text</>, <blue>text</>, <green_outlined>text</>, <blue_outlined>text</>. There is no MOTD interval setting; the message is shown when a player joins. Written to BeastsOfBermuda/Config/Server/MessageOfTheDay.txt (WindowsServer and LinuxServer copies).",
+        "Keywords": "motd,message,of,the,day,messageoftheday",
+        "FieldName": "MessageOfTheDay",
+        "InputType": "Textarea",
+        "ParamFieldName": "MessageOfTheDay",
+        "DefaultValue": "Welcome to this Beasts of Bermuda server.",
         "EnumValues": {}
     },
     {
-        "DisplayName": "Custom Settings",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "To configure other settings for the server, [generate](https://cleafspear.github.io/) a configuration file and paste the contents into WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer/Game.ini. On Linux, Config, SaveGames, and User under LinuxServer/BeastsOfBermuda/Saved are symlinks to the WindowsServer folders, so config and save data stay in sync. Logs and Crashes are not linked.",
-        "Keywords": "custom,settings",
+        "DisplayName": "Lock Console",
+        "Category": "Admin:security",
+        "Subcategory": "Administration:security:1",
+        "Description": "If disabled, the server is in open-console mode and treats everyone as default admins. Leave enabled except for testing.",
+        "Keywords": "console,lock,bconsolelocked",
+        "FieldName": "bConsoleLocked",
+        "InputType": "checkbox",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.bConsoleLocked",
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Reserved Admin Slots",
+        "Category": "Admin:security",
+        "Subcategory": "Administration:security:1",
+        "Description": "Slots reserved for administrators. Filled when an admin joins. Default is 2.",
+        "Keywords": "reserved,admin,slots,reservedadminslots",
+        "FieldName": "ReservedAdminSlots",
+        "InputType": "number",
+        "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.ReservedAdminSlots",
+        "DefaultValue": "2",
+        "EnumValues": {},
+        "MinValue": "0",
+        "Suffix": "slots",
+        "Placeholder": "2"
+    },
+    {
+        "DisplayName": "Additional ServerGameInstance Settings",
+        "Category": "Advanced:build",
+        "Subcategory": "Extra Game.ini lines:tune:0",
+        "Description": "Lines written into [/Script/BeastsOfBermuda.ServerGameInstance] that AMP does not manage as individual settings. One line per entry, exactly as they should appear in Game.ini, including !Key=ClearArray and +Key=... where required. Typical lines: CreatureLimits, GrowthLimits, AllowedSpeciesGroups, DisabledAITypes, WorldEventBuffsToNotUse, AdminRanks, AdminCommandRules, ServerAdmins, PlayerChatColors, PlayerChatTags, AdminAllowedCommands, AdminBlockedCommands, ProfanityWords, ServerAdminPassword, AutoMessages. Import Configuration fills this box from leftover lines in that section. Do not repeat keys that already have AMP settings, or they will be written twice. On Linux, Config, SaveGames, and User under LinuxServer/BeastsOfBermuda/Saved are symlinks to the WindowsServer folders, so this Game.ini is the real file; Logs and Crashes are not linked.",
+        "Keywords": "custom,settings,creaturelimits,growthlimits,adminranks,serveradmins,playerchattags",
         "FieldName": "CustomSettings",
-        "InputType": "hidden",
+        "InputType": "Textarea",
         "ParamFieldName": "CustomSettings",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Additional Skins Settings",
+        "Category": "Advanced:build",
+        "Subcategory": "Extra Game.ini lines:tune:0",
+        "Description": "Leftover lines written into the [Skins] section. One line per entry. Import fills this from unmapped [Skins] lines.",
+        "Keywords": "skins,custom,gameini",
+        "FieldName": "SkinsUserSettings",
+        "InputType": "Textarea",
+        "ParamFieldName": "SkinsUserSettings",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Additional WeatherControllerBase Settings",
+        "Category": "Advanced:build",
+        "Subcategory": "Extra Game.ini lines:tune:0",
+        "Description": "Leftover lines written into [/Script/BeastsOfBermuda.WeatherControllerBase]. One line per entry. Import fills this from unmapped lines in that section.",
+        "Keywords": "weather,custom,gameini",
+        "FieldName": "WeatherControllerUserSettings",
+        "InputType": "Textarea",
+        "ParamFieldName": "WeatherControllerUserSettings",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Additional SaveSystem Settings",
+        "Category": "Advanced:build",
+        "Subcategory": "Extra Game.ini lines:tune:0",
+        "Description": "Leftover lines written into [/Script/BeastsOfBermuda.SaveSystem]. One line per entry. Import fills this from unmapped lines in that section.",
+        "Keywords": "save,custom,gameini",
+        "FieldName": "SaveSystemUserSettings",
+        "InputType": "Textarea",
+        "ParamFieldName": "SaveSystemUserSettings",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Additional GameReporter Settings",
+        "Category": "Advanced:build",
+        "Subcategory": "Extra Game.ini lines:tune:0",
+        "Description": "Leftover lines written into [GameReporter]. One line per entry. Import fills this from unmapped webhook lines. Do not repeat keys that already have AMP webhook settings.",
+        "Keywords": "gamereporter,webhook,custom,gameini",
+        "FieldName": "GameReporterUserSettings",
+        "InputType": "Textarea",
+        "ParamFieldName": "GameReporterUserSettings",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Additional BBGameModeBase Settings",
+        "Category": "Advanced:build",
+        "Subcategory": "Extra Game.ini lines:tune:0",
+        "Description": "Lines written into [/Script/BeastsOfBermuda.BBGameModeBase]. Use this for leftover Game RCON lines such as bLiveMessagesToRCON (not AMP settings). One line per entry.",
+        "Keywords": "rcon,bbgamemodebase,blivemessagestorcon",
+        "FieldName": "BBGameModeBaseUserSettings",
+        "InputType": "Textarea",
+        "ParamFieldName": "BBGameModeBaseUserSettings",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Additional RCONHandler Settings",
+        "Category": "Advanced:build",
+        "Subcategory": "Extra Game.ini lines:tune:0",
+        "Description": "Lines written into [/Script/BeastsOfBermuda.RCONHandler]. Use this for leftover CommunicationPort / IP4Binding lines if present. One line per entry.",
+        "Keywords": "rcon,rconhandler,communicationport,ip4binding",
+        "FieldName": "RCONHandlerUserSettings",
+        "InputType": "Textarea",
+        "ParamFieldName": "RCONHandlerUserSettings",
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Chat Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Sends chat activity to Discord when the webhook ID is set.",
+        "Keywords": "discord,webhook,chat,busechatwebhook",
+        "FieldName": "bUseChatWebhook",
+        "InputType": "checkbox",
+        "ParamFieldName": "GameReporter.bUseChatWebhook",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Chat Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
+        "Keywords": "chat,webhook,chatreportdiscordwebhook",
+        "FieldName": "ChatReportDiscordWebhook",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.ChatReportDiscordWebhook",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Chat Webhook Icon URL",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Optional image URL used as the chat webhook avatar.",
+        "Keywords": "chat,webhook,icon,chatreporticonurl",
+        "FieldName": "ChatReportIconURL",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.ChatReportIconURL",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Chat Webhook Format",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Format string. [:x01] is a backtick; \\n is a newline. Placeholders include {PlayerInfo}, {ChatMode}, {msg}.",
+        "Keywords": "chat,webhook,format,chatwebhookformatstyle",
+        "FieldName": "ChatWebhookFormatStyle",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.ChatWebhookFormatStyle",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "[:x01]<{PlayerInfo}>[:x01] <ChatMode={ChatMode}> **>** _{msg}_",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Login Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Sends join/leave reports to Discord.",
+        "Keywords": "discord,webhook,login,buseloginreportwebhook",
+        "FieldName": "bUseLoginReportWebhook",
+        "InputType": "checkbox",
+        "ParamFieldName": "GameReporter.bUseLoginReportWebhook",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Login Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
+        "Keywords": "login,webhook,logindiscordwebhook",
+        "FieldName": "LoginDiscordWebhook",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.LoginDiscordWebhook",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Login Webhook Icon URL",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Optional image URL used as the login webhook avatar.",
+        "Keywords": "login,webhook,icon,logindiscordiconurl",
+        "FieldName": "LoginDiscordIconURL",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.LoginDiscordIconURL",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Login Webhook Format",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Join format. Placeholders include {PlayerInfo} and {Server}.",
+        "Keywords": "login,webhook,format,loginreportformatstyle",
+        "FieldName": "LoginReportFormatStyle",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.LoginReportFormatStyle",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Player [:x01]<{PlayerInfo}>[:x01] joined server _{Server}_\\n----",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Logout Webhook Format",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Leave format. Placeholders include {PlayerInfo}, {Server}, {Hours}, {Minutes}.",
+        "Keywords": "logout,webhook,format,logoutreportformatstyle",
+        "FieldName": "LogoutReportFormatStyle",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.LogoutReportFormatStyle",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Player [:x01]<{PlayerInfo}>[:x01] left server _{Server}_, played for {Hours} hours and {Minutes} minutes.\\n----",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Admin Command Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Sends admin command usage to Discord.",
+        "Keywords": "discord,webhook,admin,command,buseadmincommandusagewebhook",
+        "FieldName": "bUseAdminCommandUsageWebhook",
+        "InputType": "checkbox",
+        "ParamFieldName": "GameReporter.bUseAdminCommandUsageWebhook",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Admin Command Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
+        "Keywords": "admin,command,webhook,admincmddiscordwebhook",
+        "FieldName": "AdminCmdDiscordWebhook",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.AdminCmdDiscordWebhook",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Admin Command Webhook Icon URL",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Optional image URL used as the command webhook avatar.",
+        "Keywords": "admin,command,icon,admincmddiscordicon",
+        "FieldName": "AdminCmdDiscordIcon",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.AdminCmdDiscordIcon",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Admin Command Webhook Format",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Format string. Placeholders include {PlayerInfo} and {Cmd}.",
+        "Keywords": "admin,command,format,admincommandusageformatstyle",
+        "FieldName": "AdminCommandUsageFormatStyle",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.AdminCommandUsageFormatStyle",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Player [:x01]<{PlayerInfo}>[:x01] used command [:x01]{Cmd}[:x01]\\n----",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Group Activity Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Sends group create/join/leave activity to Discord.",
+        "Keywords": "discord,webhook,group,busegroupactivitywebhook",
+        "FieldName": "bUseGroupActivityWebhook",
+        "InputType": "checkbox",
+        "ParamFieldName": "GameReporter.bUseGroupActivityWebhook",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Group Activity Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
+        "Keywords": "group,webhook,groupactivitydiscordwebhook",
+        "FieldName": "GroupActivityDiscordWebhook",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.GroupActivityDiscordWebhook",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Group Activity Webhook Icon URL",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Optional image URL used as the group webhook avatar.",
+        "Keywords": "group,webhook,icon,groupactivitydiscordiconurl",
+        "FieldName": "GroupActivityDiscordIconURL",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.GroupActivityDiscordIconURL",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Combat Activity Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Sends combat/death logs to Discord.",
+        "Keywords": "discord,webhook,combat,busecombatactivitywebhook",
+        "FieldName": "bUseCombatActivityWebhook",
+        "InputType": "checkbox",
+        "ParamFieldName": "GameReporter.bUseCombatActivityWebhook",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Combat Activity Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
+        "Keywords": "combat,webhook,combatactivitydiscordwebhook",
+        "FieldName": "CombatActivityDiscordWebhook",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.CombatActivityDiscordWebhook",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Combat Activity Webhook Icon URL",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Optional image URL used as the combat webhook avatar.",
+        "Keywords": "combat,webhook,icon,combatactivitydiscordiconurl",
+        "FieldName": "CombatActivityDiscordIconURL",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.CombatActivityDiscordIconURL",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Enable Events Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Sends world-event reports to Discord.",
+        "Keywords": "discord,webhook,events,buseeventswebhook",
+        "FieldName": "bUseEventsWebhook",
+        "InputType": "checkbox",
+        "ParamFieldName": "GameReporter.bUseEventsWebhook",
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Events Webhook",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
+        "Keywords": "events,webhook,eventsdiscordwebhook",
+        "FieldName": "EventsDiscordWebhook",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.EventsDiscordWebhook",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Events Webhook Icon URL",
+        "Category": "Advanced:build",
+        "Subcategory": "Discord Webhooks:webhook:1",
+        "Description": "Optional image URL used as the events webhook avatar.",
+        "Keywords": "events,webhook,icon,eventsdiscordiconurl",
+        "FieldName": "EventsDiscordIconURL",
+        "InputType": "text",
+        "ParamFieldName": "GameReporter.EventsDiscordIconURL",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
         "EnumValues": {}
     }
 ]

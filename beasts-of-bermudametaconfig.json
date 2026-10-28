@@ -2,17 +2,159 @@
     {
         "ConfigFile": "WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer/Game.ini",
         "ConfigType": "ini",
-        "AutoMap": true,
         "Importable": true,
-        "ConfigFormat": "{0}=\"{1}\"",
-        "ConfigFormatRegex": "^(?<key>.+?)\\s*=\\s*\"(?<value>.*?)\"$"
+        "ConfigFormat": "{0}{1}",
+        "Subsections": [
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "MapNameOverride=": "MapNameOverride",
+                    "GameMode=": "GameMode",
+                    "PreferredGameExperience=": "PreferredGameExperience",
+                    "bDisplayDiscordLink=": "bDisplayDiscordLink",
+                    "DiscordLink=": "DiscordLink",
+                    "bRequireSteamGroupToJoin=": "bRequireSteamGroupToJoin",
+                    "SteamGroupName=": "SteamGroupName",
+                    "FoodDrainDifficulty=": "FoodDrainDifficulty",
+                    "WaterDrainDifficulty=": "WaterDrainDifficulty",
+                    "WaterDirtinessDifficulty=": "WaterDirtinessDifficulty",
+                    "FoliageSpawnSpeed=": "FoliageSpawnSpeed",
+                    "DayLength=": "DayLength",
+                    "CarcassRateMultiplier=": "CarcassRateMultiplier",
+                    "CarcassSpawnRatio=": "CarcassSpawnRatio",
+                    "bDisableRestlessDebuff=": "bDisableRestlessDebuff",
+                    "bDisableRandomEggSpawns=": "bDisableRandomEggSpawns",
+                    "RandomEggSpawnChance=": "RandomEggSpawnChance",
+                    "TunnelNetworkDespawnTime=": "TunnelNetworkDespawnTime",
+                    "bPortalsDisabled=": "bPortalsDisabled",
+                    "bSpawnWorldEvents=": "bSpawnWorldEvents",
+                    "WorldEventPrepTime=": "WorldEventPrepTime",
+                    "WorldEventDuration=": "WorldEventDuration",
+                    "WorldEventSpacing=": "WorldEventSpacing",
+                    "bDisableLeaderboard=": "bDisableLeaderboard",
+                    "bDisableRevengeKillProtection=": "bDisableRevengeKillProtection",
+                    "bDisableUseRandomName=": "bDisableUseRandomName",
+                    "bSpawnForestFires=": "bSpawnForestFires",
+                    "bDisableAISpawning=": "bDisableAISpawning",
+                    "AISpawnRateMultiplier=": "AISpawnRateMultiplier",
+                    "AISpawnCapMultiplier=": "AISpawnCapMultiplier",
+                    "bUseHardGroupLimits=": "bUseHardGroupLimits",
+                    "bUseMixedHerdCaps=": "bUseMixedHerdCaps",
+                    "bForceIgnoreGroupSpeciesCheckOnLogin=": "bForceIgnoreGroupSpeciesCheckOnLogin",
+                    "GrowthRate=": "GrowthRate",
+                    "GrowthLimit=": "GrowthLimit",
+                    "MaxTalentsAllowed=": "MaxTalentsAllowed",
+                    "bDisableResurrections=": "bDisableResurrections",
+                    "bDisableReincarnations=": "bDisableReincarnations",
+                    "bDisableGlobalChat=": "bDisableGlobalChat",
+                    "bDisableLocalChat=": "bDisableLocalChat",
+                    "bDisplayIntroMessage=": "bDisplayIntroMessage",
+                    "bConsoleLocked=": "bConsoleLocked",
+                    "ReservedAdminSlots=": "ReservedAdminSlots",
+                    "": "CustomSettings"
+                }
+            },
+            {
+                "Heading": "Skins",
+                "SettingMappings": {
+                    "SkinLockGrowthThreshold=": "SkinLockGrowthThreshold",
+                    "": "SkinsUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.WeatherControllerBase",
+                "SettingMappings": {
+                    "OceanHeightAdd=": "OceanHeightAdd",
+                    "bCapStormSurge=": "bCapStormSurge",
+                    "StormSurgeMultiplier=": "StormSurgeMultiplier",
+                    "bSpawnsTornados=": "bSpawnsTornados",
+                    "bStormsCauseStress=": "bStormsCauseStress",
+                    "SpeedModifier=": "SpeedModifier",
+                    "IntensityModifier=": "IntensityModifier",
+                    "StormSpacingMultiplier=": "StormSpacingMultiplier",
+                    "RainCommonness=": "RainCommonness",
+                    "FogCommonness=": "FogCommonness",
+                    "OvercastCommonness=": "OvercastCommonness",
+                    "DryLightningCommonness=": "DryLightningCommonness",
+                    "": "WeatherControllerUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.SaveSystem",
+                "SettingMappings": {
+                    "AutosaveTime=": "AutosaveTime",
+                    "bDisableCharacterDeath=": "bDisableCharacterDeath",
+                    "": "SaveSystemUserSettings"
+                }
+            },
+            {
+                "Heading": "GameReporter",
+                "SettingMappings": {
+                    "bUseChatWebhook=": "bUseChatWebhook",
+                    "ChatReportDiscordWebhook=": "ChatReportDiscordWebhook",
+                    "ChatReportIconURL=": "ChatReportIconURL",
+                    "ChatWebhookFormatStyle=": "ChatWebhookFormatStyle",
+                    "bUseLoginReportWebhook=": "bUseLoginReportWebhook",
+                    "LoginDiscordWebhook=": "LoginDiscordWebhook",
+                    "LoginDiscordIconURL=": "LoginDiscordIconURL",
+                    "LoginReportFormatStyle=": "LoginReportFormatStyle",
+                    "LogoutReportFormatStyle=": "LogoutReportFormatStyle",
+                    "bUseAdminCommandUsageWebhook=": "bUseAdminCommandUsageWebhook",
+                    "AdminCmdDiscordWebhook=": "AdminCmdDiscordWebhook",
+                    "AdminCmdDiscordIcon=": "AdminCmdDiscordIcon",
+                    "AdminCommandUsageFormatStyle=": "AdminCommandUsageFormatStyle",
+                    "bUseGroupActivityWebhook=": "bUseGroupActivityWebhook",
+                    "GroupActivityDiscordWebhook=": "GroupActivityDiscordWebhook",
+                    "GroupActivityDiscordIconURL=": "GroupActivityDiscordIconURL",
+                    "bUseCombatActivityWebhook=": "bUseCombatActivityWebhook",
+                    "CombatActivityDiscordWebhook=": "CombatActivityDiscordWebhook",
+                    "CombatActivityDiscordIconURL=": "CombatActivityDiscordIconURL",
+                    "bUseEventsWebhook=": "bUseEventsWebhook",
+                    "EventsDiscordWebhook=": "EventsDiscordWebhook",
+                    "EventsDiscordIconURL=": "EventsDiscordIconURL",
+                    "": "GameReporterUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.BBGameModeBase",
+                "SettingMappings": {
+                    "": "BBGameModeBaseUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.RCONHandler",
+                "SettingMappings": {
+                    "": "RCONHandlerUserSettings"
+                }
+            }
+        ]
     },
     {
-        "ConfigFile": "WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer/Game.ini",
-        "ConfigType": "ini",
-        "AutoMap": true,
+        "ConfigFile": "WindowsServer/BeastsOfBermuda/Config/Server/MessageOfTheDay.txt",
+        "ConfigType": "kvp",
         "Importable": true,
-        "ConfigFormat": "{0}={1}",
-        "ConfigFormatRegex": "^(?<key>.+?)\\s*=\\s*(?<value>[^\"]*?)$"
+        "ConfigFormat": "{0}{1}",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "": "MessageOfTheDay"
+                }
+            }
+        ]
+    },
+    {
+        "ConfigFile": "LinuxServer/BeastsOfBermuda/Config/Server/MessageOfTheDay.txt",
+        "ConfigType": "kvp",
+        "Importable": true,
+        "ConfigFormat": "{0}{1}",
+        "Subsections": [
+            {
+                "Heading": "$root",
+                "SettingMappings": {
+                    "": "MessageOfTheDay"
+                }
+            }
+        ]
     }
 ]
