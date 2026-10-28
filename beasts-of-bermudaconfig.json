@@ -1004,7 +1004,7 @@
     {
         "DisplayName": "Additional ServerGameInstance Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Game.ini lines:tune:12",
+        "Subcategory": "Extra Lines:tune:12",
         "Description": "Lines written into [/Script/BeastsOfBermuda.ServerGameInstance] that AMP does not manage as individual settings. One line per entry, exactly as they should appear in Game.ini, including !Key=ClearArray and +Key=... where required. Typical lines: CreatureLimits, GrowthLimits, AllowedSpeciesGroups, DisabledAITypes, WorldEventBuffsToNotUse, AdminRanks, AdminCommandRules, ServerAdmins, PlayerChatColors, PlayerChatTags, AdminAllowedCommands, AdminBlockedCommands, ProfanityWords, ServerAdminPassword, AutoMessages. Import Configuration fills this box from leftover lines in that section. Do not repeat keys that already have AMP settings, or they will be written twice. On Linux, Config, SaveGames, and User under LinuxServer/BeastsOfBermuda/Saved are symlinks to the WindowsServer folders, so this Game.ini is the real file; Logs and Crashes are not linked.",
         "Keywords": "custom,settings,creaturelimits,growthlimits,adminranks,serveradmins,playerchattags",
         "FieldName": "CustomSettings",
@@ -1016,7 +1016,7 @@
     {
         "DisplayName": "Additional Skins Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Game.ini lines:tune:12",
+        "Subcategory": "Extra Lines:tune:12",
         "Description": "Leftover lines written into the [Skins] section. One line per entry. Import fills this from unmapped [Skins] lines.",
         "Keywords": "skins,custom,gameini",
         "FieldName": "SkinsUserSettings",
@@ -1028,7 +1028,7 @@
     {
         "DisplayName": "Additional WeatherControllerBase Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Game.ini lines:tune:12",
+        "Subcategory": "Extra Lines:tune:12",
         "Description": "Leftover lines written into [/Script/BeastsOfBermuda.WeatherControllerBase]. One line per entry. Import fills this from unmapped lines in that section.",
         "Keywords": "weather,custom,gameini",
         "FieldName": "WeatherControllerUserSettings",
@@ -1040,7 +1040,7 @@
     {
         "DisplayName": "Additional SaveSystem Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Game.ini lines:tune:12",
+        "Subcategory": "Extra Lines:tune:12",
         "Description": "Leftover lines written into [/Script/BeastsOfBermuda.SaveSystem]. One line per entry. Import fills this from unmapped lines in that section.",
         "Keywords": "save,custom,gameini",
         "FieldName": "SaveSystemUserSettings",
@@ -1052,7 +1052,7 @@
     {
         "DisplayName": "Additional GameReporter Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Game.ini lines:tune:12",
+        "Subcategory": "Extra Lines:tune:12",
         "Description": "Leftover lines written into [GameReporter]. One line per entry. Import fills this from unmapped webhook lines. Do not repeat keys that already have AMP webhook settings.",
         "Keywords": "gamereporter,webhook,custom,gameini",
         "FieldName": "GameReporterUserSettings",
@@ -1064,7 +1064,7 @@
     {
         "DisplayName": "Additional BBGameModeBase Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Game.ini lines:tune:12",
+        "Subcategory": "Extra Lines:tune:12",
         "Description": "Lines written into [/Script/BeastsOfBermuda.BBGameModeBase]. Use this for leftover Game RCON lines such as bLiveMessagesToRCON (not AMP settings). One line per entry.",
         "Keywords": "rcon,bbgamemodebase,blivemessagestorcon",
         "FieldName": "BBGameModeBaseUserSettings",
@@ -1076,7 +1076,7 @@
     {
         "DisplayName": "Additional RCONHandler Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Game.ini lines:tune:12",
+        "Subcategory": "Extra Lines:tune:12",
         "Description": "Lines written into [/Script/BeastsOfBermuda.RCONHandler]. Use this for leftover CommunicationPort / IP4Binding lines if present. One line per entry.",
         "Keywords": "rcon,rconhandler,communicationport,ip4binding",
         "FieldName": "RCONHandlerUserSettings",
