@@ -8,6 +8,7 @@
         "SkipOnFailure": false
     },
     {
+        "_comment": "Copy-if-missing only. OverwriteExistingFiles must stay false so Fetch Latest, SteamCMD follow-up, and ConfigVersion bumps never replace a server that already has Game.ini. beasts-of-bermudagame.ini seeds brand-new instances.",
         "UpdateStageName": "Game.ini File Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
