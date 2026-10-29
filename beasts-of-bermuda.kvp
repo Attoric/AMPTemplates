@@ -22,8 +22,8 @@ Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
 Meta.AppConfigId=e79b39ca-9383-4713-9333-7f78960c4a19
-Meta.ConfigVersion=20
-Meta.ReleaseNotes=Game.ini is AutoMapped in place. Import then save keeps repeated array lines, !ClearArray, custom AdminRanks, and ProfanityWords. Unset keys, empty Key= lines, empty Engine/RCON headings, and species the owner did not set are not written.
+Meta.ConfigVersion=21
+Meta.ReleaseNotes=Game.ini uses dedicated fields for unique scalars and leftover Additional Settings textareas for arrays and unmatched lines. New servers get placeholder AdminRanks, ServerAdmins, chat colors/tags, CreatureLimits, and GrowthLimits. Existing Game.ini is never overwritten by the template fetch. Empty Engine/RCON/DDoS headings, + prefixes, empty SteamGroupName, FlushServerData, and ForceSaveData are not written.
 Meta.BreakingReleaseNotes=Existing Linux Wine instances now launch LinuxServer instead of the Windows binary under Wine. Config, SaveGames, and User are linked to the WindowsServer copies, so Wine-era saves are kept automatically. Any existing LinuxServer copy of those folders is merged in (Windows files win) and then moved to a .linux-backup-<timestamp> folder beside it, never deleted. Logs and Crashes stay per-platform.
 Meta.AppIsMultiIPAware=False
 App.DisplayName=Beasts of Bermuda
