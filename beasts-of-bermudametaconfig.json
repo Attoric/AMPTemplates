@@ -139,7 +139,8 @@
             {
                 "Heading": "Skins",
                 "SettingMappings": {
-                    "SkinLockGrowthThreshold=": "SkinLockGrowthThreshold"
+                    "SkinLockGrowthThreshold=": "SkinLockGrowthThreshold",
+                    "": "SkinsUserSettings"
                 }
             },
             {
@@ -156,14 +157,16 @@
                     "RainCommonness=": "RainCommonness",
                     "FogCommonness=": "FogCommonness",
                     "OvercastCommonness=": "OvercastCommonness",
-                    "DryLightningCommonness=": "DryLightningCommonness"
+                    "DryLightningCommonness=": "DryLightningCommonness",
+                    "": "WeatherControllerUserSettings"
                 }
             },
             {
                 "Heading": "/Script/BeastsOfBermuda.SaveSystem",
                 "SettingMappings": {
                     "AutosaveTime=": "AutosaveTime",
-                    "bDisableCharacterDeath=": "bDisableCharacterDeath"
+                    "bDisableCharacterDeath=": "bDisableCharacterDeath",
+                    "": "SaveSystemUserSettings"
                 }
             },
             {
@@ -190,7 +193,8 @@
                     "CombatActivityDiscordIconURL=": "CombatActivityDiscordIconURL",
                     "bUseEventsWebhook=": "bUseEventsWebhook",
                     "EventsDiscordWebhook=": "EventsDiscordWebhook",
-                    "EventsDiscordIconURL=": "EventsDiscordIconURL"
+                    "EventsDiscordIconURL=": "EventsDiscordIconURL",
+                    "": "GameReporterUserSettings"
                 }
             },
             {
@@ -203,6 +207,60 @@
                 "Heading": "/Script/BeastsOfBermuda.RCONHandler",
                 "SettingMappings": {
                     "": "RCONHandlerUserSettings"
+                }
+            },
+            {
+                "Heading": "DDoSDetection",
+                "SettingMappings": {
+                    "": "DDoSDetectionUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GameEngine",
+                "SettingMappings": {
+                    "": "GameEngineUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GameSession",
+                "SettingMappings": {
+                    "": "GameSessionUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/OnlineSubsystemUtils.IpNetDriver",
+                "SettingMappings": {
+                    "": "IpNetDriverUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GarbageCollectionSettings",
+                "SettingMappings": {
+                    "": "GarbageCollectionUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.Player",
+                "SettingMappings": {
+                    "": "EnginePlayerUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.NetworkSettings",
+                "SettingMappings": {
+                    "": "NetworkSettingsUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/PacketHandler.EngineHandlerComponentFactory",
+                "SettingMappings": {
+                    "": "PacketHandlerUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GameUserSettings",
+                "SettingMappings": {
+                    "": "EngineGameUserSettingsUserSettings"
                 }
             }
         ]
