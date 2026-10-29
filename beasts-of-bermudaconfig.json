@@ -213,7 +213,7 @@
         "DisplayName": "Require Steam Group To Join",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "If enabled, players must be in the Steam group named below or they are denied access.",
+        "Description": "If enabled, players must be in the Steam group named below or they are denied access. The game's Steam group check is broken, so this stays off by default and enabling it will not actually restrict joins.",
         "Keywords": "steam,group,require,brequiresteamgrouptojoin",
         "FieldName": "bRequireSteamGroupToJoin",
         "InputType": "checkbox",
@@ -244,7 +244,7 @@
         "DisplayName": "Steam Group Name",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "Steam group name used with Require Steam Group To Join, and shown in-game when set.",
+        "Description": "Steam group name used with Require Steam Group To Join, and shown in-game when set. The game's Steam group check is broken, so this name is display-only until the game fixes membership checks.",
         "Keywords": "steam,group,name,steamgroupname",
         "FieldName": "SteamGroupName",
         "InputType": "text",
@@ -578,7 +578,7 @@
         "DisplayName": "Disable Weather Immunity Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_WeatherImmunity (ServerGameInstance WorldEventBuffsToNotUse=EVENT_WeatherImmunity). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_WeatherImmunity under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,weatherimmunity,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventWeatherImmunity",
         "InputType": "checkbox",
@@ -586,7 +586,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_WeatherImmunity"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -594,7 +594,7 @@
         "DisplayName": "Disable Low Food and Water Drain Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_LowFoodWaterDrain (ServerGameInstance WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,lowfoodwaterdrain,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventLowFoodWaterDrain",
         "InputType": "checkbox",
@@ -602,7 +602,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_LowFoodWaterDrain"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -610,7 +610,7 @@
         "DisplayName": "Disable Auto Resurrection Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_AutoResurrection (ServerGameInstance WorldEventBuffsToNotUse=EVENT_AutoResurrection). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_AutoResurrection under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,autoresurrection,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventAutoResurrection",
         "InputType": "checkbox",
@@ -618,7 +618,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_AutoResurrection"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -626,7 +626,7 @@
         "DisplayName": "Disable AI Swarm Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_AISwarm (ServerGameInstance WorldEventBuffsToNotUse=EVENT_AISwarm). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_AISwarm under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,aiswarm,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventAISwarm",
         "InputType": "checkbox",
@@ -634,7 +634,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_AISwarm"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -642,7 +642,7 @@
         "DisplayName": "Disable Nesting Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_Nesting (ServerGameInstance WorldEventBuffsToNotUse=EVENT_Nesting). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_Nesting under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,nesting,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventNesting",
         "InputType": "checkbox",
@@ -650,7 +650,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_Nesting"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -658,7 +658,7 @@
         "DisplayName": "Disable Growth Buff Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_GrowthBuff (ServerGameInstance WorldEventBuffsToNotUse=EVENT_GrowthBuff). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_GrowthBuff under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,growthbuff,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventGrowthBuff",
         "InputType": "checkbox",
@@ -666,7 +666,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_GrowthBuff"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -674,7 +674,7 @@
         "DisplayName": "Disable Pledge Amplify Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_PledgeAmplify (ServerGameInstance WorldEventBuffsToNotUse=EVENT_PledgeAmplify). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_PledgeAmplify under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,pledgeamplify,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventPledgeAmplify",
         "InputType": "checkbox",
@@ -682,7 +682,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_PledgeAmplify"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -690,7 +690,7 @@
         "DisplayName": "Disable Reskin Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_Reskin (ServerGameInstance WorldEventBuffsToNotUse=EVENT_Reskin). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
+        "Description": "If enabled, writes WorldEventBuffsToNotUse=EVENT_Reskin under ServerGameInstance. The mapping prefix is the full line so Import ticks from that line and off does not write an empty WorldEventBuffsToNotUse=.",
         "Keywords": "world,event,reskin,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventReskin",
         "InputType": "checkbox",
@@ -698,7 +698,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EVENT_Reskin"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -719,7 +719,7 @@
         "DisplayName": "World Event Buff Weights",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "One WorldEventBuffWeights entry per line. AMP writes WorldEventBuffWeights= in front of each line. Example: (Event=EVENT_AutoResurrection,Weight=2.0f). Also matches +WorldEventBuffWeights= on Import.",
+        "Description": "One WorldEventBuffWeights entry per line. AMP writes WorldEventBuffWeights= in front of each line. Example: (Event=EVENT_AutoResurrection,Weight=2.0f). Does not write a + prefix.",
         "Keywords": "worldeventbuffweights,event,weight",
         "FieldName": "WorldEventBuffWeights",
         "InputType": "Textarea",
@@ -732,7 +732,7 @@
         "DisplayName": "World Event Buffs Extra",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "WorldEventBuffsToNotUse values that are not one of the eight event toggles. One EVENT_ name per line. AMP writes WorldEventBuffsToNotUse= in front of each line.",
+        "Description": "WorldEventBuffsToNotUse values that are not one of the eight event toggles. One EVENT_ name per line. AMP writes WorldEventBuffsToNotUse= in front of each line. Empty skips the line so Game.ini does not get a trailing WorldEventBuffsToNotUse=.",
         "Keywords": "worldeventbuffstonotuse,extra",
         "FieldName": "WorldEventBuffsExtra",
         "InputType": "Textarea",
@@ -1046,7 +1046,7 @@
         "DisplayName": "Disable Arganodus AI",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "AI:smart_toy:5",
-        "Description": "If enabled, writes +DisabledAITypes=EDinoType::Arganodus. Cleafspear lists Arganodus as an AI type. Generic maps the +DisabledAITypes key; the toggle value is the EDinoType name so Import ticks when that value is present.",
+        "Description": "If enabled, writes DisabledAITypes=EDinoType::Arganodus (no + prefix). Cleafspear lists Arganodus as an AI type. The mapping prefix is the full line so Import ticks from that line.",
         "Keywords": "disabledaitypes,arganodus,ai",
         "FieldName": "DisableAIArganodus",
         "InputType": "checkbox",
@@ -1054,7 +1054,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EDinoType::Arganodus"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -1062,7 +1062,7 @@
         "DisplayName": "Disable Auroraceratops AI",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "AI:smart_toy:5",
-        "Description": "If enabled, writes +DisabledAITypes=EDinoType::Auroraceratops. Cleafspear lists Auroraceratops as an AI type. Generic maps the +DisabledAITypes key; the toggle value is the EDinoType name so Import ticks when that value is present.",
+        "Description": "If enabled, writes DisabledAITypes=EDinoType::Auroraceratops (no + prefix). Cleafspear lists Auroraceratops as an AI type. The mapping prefix is the full line so Import ticks from that line.",
         "Keywords": "disabledaitypes,auroraceratops,ai",
         "FieldName": "DisableAIAuroraceratops",
         "InputType": "checkbox",
@@ -1070,7 +1070,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EDinoType::Auroraceratops"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -1078,7 +1078,7 @@
         "DisplayName": "Disable HorseshoeCrab AI",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "AI:smart_toy:5",
-        "Description": "If enabled, writes +DisabledAITypes=EDinoType::HorseshoeCrab. Cleafspear lists HorseshoeCrab as an AI type. Generic maps the +DisabledAITypes key; the toggle value is the EDinoType name so Import ticks when that value is present.",
+        "Description": "If enabled, writes DisabledAITypes=EDinoType::HorseshoeCrab (no + prefix). Cleafspear lists HorseshoeCrab as an AI type. The mapping prefix is the full line so Import ticks from that line.",
         "Keywords": "disabledaitypes,horseshoecrab,ai",
         "FieldName": "DisableAIHorseshoeCrab",
         "InputType": "checkbox",
@@ -1086,7 +1086,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EDinoType::HorseshoeCrab"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -1094,7 +1094,7 @@
         "DisplayName": "Disable Malawania AI",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "AI:smart_toy:5",
-        "Description": "If enabled, writes +DisabledAITypes=EDinoType::Malawania. Cleafspear lists Malawania as an AI type. Generic maps the +DisabledAITypes key; the toggle value is the EDinoType name so Import ticks when that value is present.",
+        "Description": "If enabled, writes DisabledAITypes=EDinoType::Malawania (no + prefix). Cleafspear lists Malawania as an AI type. The mapping prefix is the full line so Import ticks from that line.",
         "Keywords": "disabledaitypes,malawania,ai",
         "FieldName": "DisableAIMalawania",
         "InputType": "checkbox",
@@ -1102,7 +1102,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "EDinoType::Malawania"
+            "True": " "
         },
         "SkipIfEmpty": true
     },
@@ -1110,7 +1110,7 @@
         "DisplayName": "Additional disabled AI types",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "AI:smart_toy:5",
-        "Description": "Extra +DisabledAITypes values not covered by the Cleafspear AI toggles. One EDinoType::Name per line. AMP writes +DisabledAITypes= in front of each line. Paste unmatched DisabledAITypes leftovers here.",
+        "Description": "Extra DisabledAITypes values not covered by the Cleafspear AI toggles. One EDinoType::Name per line. AMP writes DisabledAITypes= in front of each line with no + prefix. Paste unmatched DisabledAITypes leftovers here.",
         "Keywords": "disabledaitypes,extra,ai",
         "FieldName": "DisabledAITypesExtra",
         "InputType": "Textarea",
@@ -2161,313 +2161,313 @@
         "DisplayName": "Announce Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::Announce. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::Announce. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,announce,admincommandrules",
         "FieldName": "AdminCommandAnnounce",
         "InputType": "text",
         "ParamFieldName": "AdminCommandAnnounce",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "BanPlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::BanPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::BanPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,banplayer,admincommandrules",
         "FieldName": "AdminCommandBanPlayer",
         "InputType": "text",
         "ParamFieldName": "AdminCommandBanPlayer",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "CheckServerData Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::CheckServerData. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::CheckServerData. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,checkserverdata,admincommandrules",
         "FieldName": "AdminCommandCheckServerData",
         "InputType": "text",
         "ParamFieldName": "AdminCommandCheckServerData",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ClearBones Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ClearBones. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ClearBones. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,clearbones,admincommandrules",
         "FieldName": "AdminCommandClearBones",
         "InputType": "text",
         "ParamFieldName": "AdminCommandClearBones",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ClearCarcasses Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ClearCarcasses. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ClearCarcasses. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,clearcarcasses,admincommandrules",
         "FieldName": "AdminCommandClearCarcasses",
         "InputType": "text",
         "ParamFieldName": "AdminCommandClearCarcasses",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ControlServer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ControlServer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ControlServer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,controlserver,admincommandrules",
         "FieldName": "AdminCommandControlServer",
         "InputType": "text",
         "ParamFieldName": "AdminCommandControlServer",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ControlWeather Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ControlWeather. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ControlWeather. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,controlweather,admincommandrules",
         "FieldName": "AdminCommandControlWeather",
         "InputType": "text",
         "ParamFieldName": "AdminCommandControlWeather",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "EditFoliage Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::EditFoliage. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::EditFoliage. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,editfoliage,admincommandrules",
         "FieldName": "AdminCommandEditFoliage",
         "InputType": "text",
         "ParamFieldName": "AdminCommandEditFoliage",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "GroupInvitesOnly Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::GroupInvitesOnly. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::GroupInvitesOnly. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,groupinvitesonly,admincommandrules",
         "FieldName": "AdminCommandGroupInvitesOnly",
         "InputType": "text",
         "ParamFieldName": "AdminCommandGroupInvitesOnly",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "Groups Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::Groups. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::Groups. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,groups,admincommandrules",
         "FieldName": "AdminCommandGroups",
         "InputType": "text",
         "ParamFieldName": "AdminCommandGroups",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "GrowEntity Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::GrowEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::GrowEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,growentity,admincommandrules",
         "FieldName": "AdminCommandGrowEntity",
         "InputType": "text",
         "ParamFieldName": "AdminCommandGrowEntity",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "KickPlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::KickPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::KickPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,kickplayer,admincommandrules",
         "FieldName": "AdminCommandKickPlayer",
         "InputType": "text",
         "ParamFieldName": "AdminCommandKickPlayer",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ModifyEggsAndNesting Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ModifyEggsAndNesting. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyEggsAndNesting. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,modifyeggsandnesting,admincommandrules",
         "FieldName": "AdminCommandModifyEggsAndNesting",
         "InputType": "text",
         "ParamFieldName": "AdminCommandModifyEggsAndNesting",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ModifyServerData Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ModifyServerData. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyServerData. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,modifyserverdata,admincommandrules",
         "FieldName": "AdminCommandModifyServerData",
         "InputType": "text",
         "ParamFieldName": "AdminCommandModifyServerData",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ModifyTalents Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ModifyTalents. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyTalents. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,modifytalents,admincommandrules",
         "FieldName": "AdminCommandModifyTalents",
         "InputType": "text",
         "ParamFieldName": "AdminCommandModifyTalents",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "PossessEntity Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::PossessEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::PossessEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,possessentity,admincommandrules",
         "FieldName": "AdminCommandPossessEntity",
         "InputType": "text",
         "ParamFieldName": "AdminCommandPossessEntity",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "RespawnPlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::RespawnPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::RespawnPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,respawnplayer,admincommandrules",
         "FieldName": "AdminCommandRespawnPlayer",
         "InputType": "text",
         "ParamFieldName": "AdminCommandRespawnPlayer",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "ServerMutePlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ServerMutePlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::ServerMutePlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,servermuteplayer,admincommandrules",
         "FieldName": "AdminCommandServerMutePlayer",
         "InputType": "text",
         "ParamFieldName": "AdminCommandServerMutePlayer",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "SpawnEntity Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::SpawnEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::SpawnEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,spawnentity,admincommandrules",
         "FieldName": "AdminCommandSpawnEntity",
         "InputType": "text",
         "ParamFieldName": "AdminCommandSpawnEntity",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "Teleport Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::Teleport. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::Teleport. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,teleport,admincommandrules",
         "FieldName": "AdminCommandTeleport",
         "InputType": "text",
         "ParamFieldName": "AdminCommandTeleport",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "UseObserver Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::UseObserver. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::UseObserver. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,useobserver,admincommandrules",
         "FieldName": "AdminCommandUseObserver",
         "InputType": "text",
         "ParamFieldName": "AdminCommandUseObserver",
-        "DefaultValue": "Admin",
+        "DefaultValue": "Admin\u0022)",
         "EnumValues": {},
-        "Placeholder": "Admin"
+        "Placeholder": "Admin\u0022)"
     },
     {
         "DisplayName": "RestartMap Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::RestartMap. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
+        "Description": "Minimum admin rank for EAdminCommands::RestartMap. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"<Rank>\"). The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line. Import reads that suffix back. Ranks with spaces work (example Head Admin\").",
         "Keywords": "admin,rank,restartmap,admincommandrules",
         "FieldName": "AdminCommandRestartMap",
         "InputType": "text",
         "ParamFieldName": "AdminCommandRestartMap",
-        "DefaultValue": "Owner",
+        "DefaultValue": "Owner\u0022)",
         "EnumValues": {},
-        "Placeholder": "Owner"
+        "Placeholder": "Owner\u0022)"
     },
     {
         "DisplayName": "FlushServerData Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::FlushServerData. Wiki dedicated-servers list.",
+        "Description": "Minimum admin rank for EAdminCommands::FlushServerData. Wiki dedicated-servers list. The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line.",
         "Keywords": "admin,rank,flushserverdata,admincommandrules",
         "FieldName": "AdminCommandFlushServerData",
         "InputType": "text",
         "ParamFieldName": "AdminCommandFlushServerData",
-        "DefaultValue": "Owner",
+        "DefaultValue": "Owner\u0022)",
         "EnumValues": {},
-        "Placeholder": "Owner"
+        "Placeholder": "Owner\u0022)"
     },
     {
         "DisplayName": "ForceSaveData Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ForceSaveData. Wiki dedicated-servers list.",
+        "Description": "Minimum admin rank for EAdminCommands::ForceSaveData. Wiki dedicated-servers list. The stored value is the rank plus the closing quote and parenthesis so Game.ini gets a closed MinimalRank=\"<Rank>\" line.",
         "Keywords": "admin,rank,forcesavedata,admincommandrules",
         "FieldName": "AdminCommandForceSaveData",
         "InputType": "text",
         "ParamFieldName": "AdminCommandForceSaveData",
-        "DefaultValue": "Owner",
+        "DefaultValue": "Owner\u0022)",
         "EnumValues": {},
-        "Placeholder": "Owner"
+        "Placeholder": "Owner\u0022)"
     },
     {
         "DisplayName": "Additional admin command rules",
