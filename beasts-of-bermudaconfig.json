@@ -2084,15 +2084,14 @@
         "DisplayName": "Reserved Admin Slots",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:12",
-        "Description": "Always written as 2. Raising reserved admin slots can lock admins out when the server is full.",
+        "Description": "Game.ini ReservedAdminSlots. Hidden; default 2. Import consumes this key so the seed Game.ini has no unmatched lines. Raising reserved admin slots can lock admins out when the server is full.",
         "Keywords": "reserved,admin,slots,reservedadminslots",
         "FieldName": "ReservedAdminSlots",
         "InputType": "number",
         "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.ReservedAdminSlots",
         "DefaultValue": "2",
         "EnumValues": {},
-        "Hidden": true,
-        "ExcludeFromImport": true
+        "Hidden": true
     },
     {
         "DisplayName": "Admin Command Rules Clear Array",
