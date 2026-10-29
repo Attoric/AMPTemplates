@@ -22,8 +22,8 @@ Meta.ExtraContainerPackages=[]
 Meta.ConfigReleaseState=NotSpecified
 Meta.NoCommercialUsage=False
 Meta.AppConfigId=e79b39ca-9383-4713-9333-7f78960c4a19
-Meta.ConfigVersion=12
-Meta.ReleaseNotes=Maps Game.ini ServerAdminPassword, writes !Key=ClearArray for world events, creature limits, growth limits, disabled AI, chat colors/tags, mix groups, and admin command rules, and adds per-dinosaur CreatureLimits and GrowthLimits plus Disabled AI toggles. Extra Lines is paste-only: Import does not fill unmatched keys there.
+Meta.ConfigVersion=13
+Meta.ReleaseNotes=Maps remaining ServerGameInstance keys from Cleafspear, the dedicated-servers wiki, and Steam notes (WorldEventBuffWeights, workshop foliage, FlushServerData/ForceSaveData, RCON, plus-prefix arrays, Zupaysaurus). The default Game.ini download is copy-if-missing (OverwriteExistingFiles false) so Fetch Latest and Steam updates never replace an existing Game.ini. Extra Lines stays paste-only: Import never fills unmatched keys, so copy No AMP setting lines there before start.
 Meta.BreakingReleaseNotes=Existing Linux Wine instances now launch LinuxServer instead of the Windows binary under Wine. Config, SaveGames, and User are linked to the WindowsServer copies, so Wine-era saves are kept automatically. Any existing LinuxServer copy of those folders is merged in (Windows files win) and then moved to a .linux-backup-<timestamp> folder beside it, never deleted. Logs and Crashes stay per-platform.
 Meta.AppIsMultiIPAware=False
 App.DisplayName=Beasts of Bermuda
