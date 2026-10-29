@@ -1,12 +1,6 @@
 [
     {
         "ConfigFile": "WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer/Game.ini",
-        "AutoMap": true,
-        "Importable": true,
-        "ConfigType": "ini"
-    },
-    {
-        "ConfigFile": "WindowsServer/BeastsOfBermuda/Saved/Config/WindowsServer/Game.ini.amp",
         "ConfigType": "ini",
         "Importable": true,
         "ConfigFormat": "{0}{1}",

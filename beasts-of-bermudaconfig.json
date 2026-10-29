@@ -2577,10 +2577,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Additional ServerGameInstance Settings",
+        "DisplayName": "Extra Lines - ServerGameInstance",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. This box is only [/Script/BeastsOfBermuda.ServerGameInstance]. Other headings have their own Extra Lines boxes on this tab.",
+        "Description": "Paste any [/Script/BeastsOfBermuda.ServerGameInstance] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy lines listed under No AMP setting into this box (one full line per entry, including the key) before you start the server, or those lines are dropped. Other headings have their own Extra Lines boxes on this tab.",
         "Keywords": "custom,settings,extra,leftover,unmatched,no amp setting",
         "FieldName": "CustomSettings",
         "InputType": "Textarea",
@@ -2618,10 +2618,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Additional BBGameModeBase Settings",
+        "DisplayName": "Extra Lines - BBGameModeBase",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Additional BBGameModeBase Settings.",
+        "Description": "Paste any [/Script/BeastsOfBermuda.BBGameModeBase] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "rcon,bbgamemodebase,blivemessagestorcon",
         "FieldName": "BBGameModeBaseUserSettings",
         "InputType": "Textarea",
@@ -2631,10 +2631,10 @@
         "Hidden": false
     },
     {
-        "DisplayName": "Additional RCONHandler Settings",
+        "DisplayName": "Extra Lines - RCONHandler",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Additional RCONHandler Settings.",
+        "Description": "Paste any [/Script/BeastsOfBermuda.RCONHandler] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "rcon,rconhandler,communicationport,ip4binding",
         "FieldName": "RCONHandlerUserSettings",
         "InputType": "Textarea",
@@ -2644,10 +2644,10 @@
         "Hidden": false
     },
     {
-        "DisplayName": "Additional Skins Settings",
+        "DisplayName": "Extra Lines - Skins",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Additional Skins Settings.",
+        "Description": "Paste any [Skins] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,skinsusersettings",
         "FieldName": "SkinsUserSettings",
         "InputType": "Textarea",
@@ -2658,10 +2658,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Additional WeatherControllerBase Settings",
+        "DisplayName": "Extra Lines - WeatherControllerBase",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Additional WeatherControllerBase Settings.",
+        "Description": "Paste any [/Script/BeastsOfBermuda.WeatherControllerBase] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,weathercontrollerusersettings",
         "FieldName": "WeatherControllerUserSettings",
         "InputType": "Textarea",
@@ -2672,10 +2672,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Additional SaveSystem Settings",
+        "DisplayName": "Extra Lines - SaveSystem",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Additional SaveSystem Settings.",
+        "Description": "Paste any [/Script/BeastsOfBermuda.SaveSystem] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,savesystemusersettings",
         "FieldName": "SaveSystemUserSettings",
         "InputType": "Textarea",
@@ -2686,10 +2686,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Additional GameReporter Settings",
+        "DisplayName": "Extra Lines - GameReporter",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Additional GameReporter Settings.",
+        "Description": "Paste any [GameReporter] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,gamereporterusersettings",
         "FieldName": "GameReporterUserSettings",
         "InputType": "Textarea",
@@ -2700,10 +2700,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "DDoSDetection Lines",
+        "DisplayName": "Extra Lines - DDoSDetection",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. DDoSDetection Lines.",
+        "Description": "Paste any [DDoSDetection] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,ddosdetectionusersettings",
         "FieldName": "DDoSDetectionUserSettings",
         "InputType": "Textarea",
@@ -2714,10 +2714,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "GameEngine Lines",
+        "DisplayName": "Extra Lines - GameEngine",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. GameEngine Lines.",
+        "Description": "Paste any [/Script/Engine.GameEngine] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,gameengineusersettings",
         "FieldName": "GameEngineUserSettings",
         "InputType": "Textarea",
@@ -2728,10 +2728,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "GameSession Lines",
+        "DisplayName": "Extra Lines - GameSession",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. GameSession Lines.",
+        "Description": "Paste any [/Script/Engine.GameSession] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,gamesessionusersettings",
         "FieldName": "GameSessionUserSettings",
         "InputType": "Textarea",
@@ -2742,10 +2742,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "IpNetDriver Lines",
+        "DisplayName": "Extra Lines - IpNetDriver",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. IpNetDriver Lines.",
+        "Description": "Paste any [/Script/OnlineSubsystemUtils.IpNetDriver] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,ipnetdriverusersettings",
         "FieldName": "IpNetDriverUserSettings",
         "InputType": "Textarea",
@@ -2756,10 +2756,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Garbage Collection Lines",
+        "DisplayName": "Extra Lines - Garbage Collection",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Garbage Collection Lines.",
+        "Description": "Paste any [/Script/Engine.GarbageCollectionSettings] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,garbagecollectionusersettings",
         "FieldName": "GarbageCollectionUserSettings",
         "InputType": "Textarea",
@@ -2770,10 +2770,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Engine Player Lines",
+        "DisplayName": "Extra Lines - Engine Player",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Engine Player Lines.",
+        "Description": "Paste any [/Script/Engine.Player] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,engineplayerusersettings",
         "FieldName": "EnginePlayerUserSettings",
         "InputType": "Textarea",
@@ -2784,10 +2784,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Network Settings Lines",
+        "DisplayName": "Extra Lines - Network Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Network Settings Lines.",
+        "Description": "Paste any [/Script/Engine.NetworkSettings] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,networksettingsusersettings",
         "FieldName": "NetworkSettingsUserSettings",
         "InputType": "Textarea",
@@ -2798,10 +2798,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Packet Handler Lines",
+        "DisplayName": "Extra Lines - Packet Handler",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Packet Handler Lines.",
+        "Description": "Paste any [/Script/Engine.PacketHandler] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,packethandlerusersettings",
         "FieldName": "PacketHandlerUserSettings",
         "InputType": "Textarea",
@@ -2812,10 +2812,10 @@
         "SkipIfEmpty": true
     },
     {
-        "DisplayName": "Engine GameUserSettings Lines",
+        "DisplayName": "Extra Lines - Engine GameUserSettings",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Extra Lines:tune:16",
-        "Description": "Generic Import does not put unmatched lines here. After Import, open the Import report. Every line under No AMP setting is dropped on the next start unless you paste it into this box (one line per entry, including the key). Do that before you start the server. Engine GameUserSettings Lines.",
+        "Description": "Paste any [/Script/Engine.GameUserSettings] setting that has no AMP field of its own. Import does not fill Extra Lines. After Import, copy unmatched lines here (one full line per entry, including the key) before you start the server, or those lines are dropped.",
         "Keywords": "extras,gameini,enginegameusersettingsusersettings",
         "FieldName": "EngineGameUserSettingsUserSettings",
         "InputType": "Textarea",
