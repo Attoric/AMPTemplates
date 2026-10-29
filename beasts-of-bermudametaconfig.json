@@ -9,7 +9,6 @@
                 "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
                 "SettingMappings": {
                     "MapNameOverride=": "MapNameOverride",
-                    "GameMode=": "GameMode",
                     "PreferredGameExperience=": "PreferredGameExperience",
                     "bDisplayDiscordLink=": "bDisplayDiscordLink",
                     "DiscordLink=": "DiscordLink",
@@ -51,7 +50,90 @@
                     "bDisplayIntroMessage=": "bDisplayIntroMessage",
                     "bConsoleLocked=": "bConsoleLocked",
                     "ReservedAdminSlots=": "ReservedAdminSlots",
+                    "GameMode=": "GameMode",
+                    "!WorldEventBuffsToNotUse=ClearArray": "WorldEventBuffsClearArray",
+                    "!AdminCommandRules=ClearArray": "AdminCommandRulesClearArray",
+                    "AdminRanks=": "AdminRanks",
+                    "ServerAdmins=": "ServerAdmins",
+                    "PlayerChatColors=": "PlayerChatColors",
+                    "PlayerChatTags=": "PlayerChatTags",
                     "": "CustomSettings"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventWeatherImmunity"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventLowFoodWaterDrain"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventAutoResurrection"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventAISwarm"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventNesting"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventGrowthBuff"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventPledgeAmplify"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventReskin"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "ConfigFormat": "{0}{1}\")",
+                "SettingMappings": {
+                    "AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"": "AdminCommandAnnounce",
+                    "AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"": "AdminCommandBanPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"": "AdminCommandCheckServerData",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"": "AdminCommandClearBones",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"": "AdminCommandClearCarcasses",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"": "AdminCommandControlServer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"": "AdminCommandControlWeather",
+                    "AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"": "AdminCommandEditFoliage",
+                    "AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"": "AdminCommandGroupInvitesOnly",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"": "AdminCommandGroups",
+                    "AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"": "AdminCommandGrowEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"": "AdminCommandKickPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"": "AdminCommandModifyEggsAndNesting",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"": "AdminCommandModifyServerData",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"": "AdminCommandModifyTalents",
+                    "AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"": "AdminCommandPossessEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"": "AdminCommandRespawnPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"": "AdminCommandServerMutePlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"": "AdminCommandSpawnEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"": "AdminCommandTeleport",
+                    "AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"": "AdminCommandUseObserver",
+                    "AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"": "AdminCommandRestartMap"
                 }
             },
             {
@@ -125,6 +207,60 @@
                 "Heading": "/Script/BeastsOfBermuda.RCONHandler",
                 "SettingMappings": {
                     "": "RCONHandlerUserSettings"
+                }
+            },
+            {
+                "Heading": "DDoSDetection",
+                "SettingMappings": {
+                    "": "DDoSDetectionUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GameEngine",
+                "SettingMappings": {
+                    "": "GameEngineUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GameSession",
+                "SettingMappings": {
+                    "": "GameSessionUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/OnlineSubsystemUtils.IpNetDriver",
+                "SettingMappings": {
+                    "": "IpNetDriverUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GarbageCollectionSettings",
+                "SettingMappings": {
+                    "": "GarbageCollectionUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.Player",
+                "SettingMappings": {
+                    "": "EnginePlayerUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.NetworkSettings",
+                "SettingMappings": {
+                    "": "NetworkSettingsUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/PacketHandler.EngineHandlerComponentFactory",
+                "SettingMappings": {
+                    "": "PacketHandlerUserSettings"
+                }
+            },
+            {
+                "Heading": "/Script/Engine.GameUserSettings",
+                "SettingMappings": {
+                    "": "EngineGameUserSettingsUserSettings"
                 }
             }
         ]
