@@ -15,30 +15,21 @@
                     "WaterDirtinessDifficulty=": "WaterDirtinessDifficulty",
                     "GrowthRate=": "GrowthRate",
                     "bDisplayDiscordLink=": "bDisplayDiscordLink",
-                    "bRequireSteamGroupToJoin=": "bRequireSteamGroupToJoin",
-                    "bDisplayIntroMessage=": "bDisplayIntroMessage",
                     "bDisableUseRandomName=": "bDisableUseRandomName",
                     "bDisableRestlessDebuff=": "bDisableRestlessDebuff",
-                    "bDisableGlobalChat=": "bDisableGlobalChat",
-                    "bDisableLocalChat=": "bDisableLocalChat",
-                    "CarcassRateMultiplier=": "CarcassRateMultiplier",
-                    "CarcassSpawnRatio=": "CarcassSpawnRatio",
                     "bDisableRandomEggSpawns=": "bDisableRandomEggSpawns",
-                    "RandomEggSpawnChance=": "RandomEggSpawnChance",
                     "bDisableAISpawning=": "bDisableAISpawning",
-                    "AISpawnRateMultiplier=": "AISpawnRateMultiplier",
-                    "AISpawnCapMultiplier=": "AISpawnCapMultiplier",
                     "bSpawnWorldEvents=": "bSpawnWorldEvents",
-                    "bDisableRevengeKillProtection=": "bDisableRevengeKillProtection",
-                    "bDisableLeaderboard=": "bDisableLeaderboard",
-                    "TunnelNetworkDespawnTime=": "TunnelNetworkDespawnTime",
-                    "bDisableResurrections=": "bDisableResurrections",
-                    "bDisableReincarnations=": "bDisableReincarnations",
-                    "bPortalsDisabled=": "bPortalsDisabled",
                     "bSpawnForestFires=": "bSpawnForestFires",
-                    "bUseMixedHerdCaps=": "bUseMixedHerdCaps",
                     "bUseHardGroupLimits=": "bUseHardGroupLimits",
-                    "bForceIgnoreGroupSpeciesCheckOnLogin=": "bForceIgnoreGroupSpeciesCheckOnLogin",
+                    "bUseMixedHerdCaps=": "bUseMixedHerdCaps",
+                    "bDisplayIntroMessage=": "bDisplayIntroMessage",
+                    "PreferredGameExperience=": "PreferredGameExperience",
+                    "bConsoleLocked=": "bConsoleLocked",
+                    "DayLength=": "DayLength",
+                    "FoliageSpawnSpeed=": "FoliageSpawnSpeed",
+                    "MaxTalentsAllowed=": "MaxTalentsAllowed",
+                    "bDisableCharacterDeath=": "bDisableCharacterDeath",
                     "": "CustomSettings"
                 }
             },
@@ -50,9 +41,18 @@
                 }
             },
             {
+                "Heading": "/Script/BeastsOfBermuda.WeatherControllerBase",
+                "SettingMappings": {
+                    "OceanHeightAdd=": "OceanHeightAdd",
+                    "bCapStormSurge=": "bCapStormSurge",
+                    "bStormsCauseStress=": "bStormsCauseStress",
+                    "bSpawnsTornados=": "bSpawnsTornados",
+                    "": "WeatherControllerUserSettings"
+                }
+            },
+            {
                 "Heading": "/Script/BeastsOfBermuda.SaveSystem",
                 "SettingMappings": {
-                    "bDisableCharacterDeath=": "bDisableCharacterDeath",
                     "AutosaveTime=": "AutosaveTime",
                     "": "SaveSystemUserSettings"
                 }
@@ -61,11 +61,14 @@
                 "Heading": "GameReporter",
                 "SettingMappings": {
                     "bUseChatWebhook=": "bUseChatWebhook",
+                    "bUseCombatActivityWebhook=": "bUseCombatActivityWebhook",
                     "bUseLoginReportWebhook=": "bUseLoginReportWebhook",
+                    "LogoutReportFormatStyle=": "LogoutReportFormatStyle",
                     "bUseAdminCommandUsageWebhook=": "bUseAdminCommandUsageWebhook",
                     "bUseGroupActivityWebhook=": "bUseGroupActivityWebhook",
-                    "bUseCombatActivityWebhook=": "bUseCombatActivityWebhook",
                     "bUseEventsWebhook=": "bUseEventsWebhook",
+                    "ChatWebhookFormatStyle=": "ChatWebhookFormatStyle",
+                    "LoginReportFormatStyle=": "LoginReportFormatStyle",
                     "": "GameReporterUserSettings"
                 }
             }
