@@ -19,6 +19,37 @@
         "SkipOnFailure": false
     },
     {
+        "_comment": "Preserve helper. OverwriteExistingFiles true so script updates ship; this is not Game.ini.",
+        "UpdateStageName": "Preserve Unknown INI Lines Script",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://cdn-repo.c7rs.com/AMPTemplates/beasts-of-bermuda-preserve-game-ini.py",
+        "UpdateSourceArgs": "beasts-of-bermuda-preserve-game-ini.py",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true,
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Linux Launch Wrapper",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://cdn-repo.c7rs.com/AMPTemplates/beasts-of-bermudalaunch.sh",
+        "UpdateSourceArgs": "bob-launch.sh",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true,
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Windows Launch Wrapper",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://cdn-repo.c7rs.com/AMPTemplates/beasts-of-bermudalaunch.cmd",
+        "UpdateSourceArgs": "bob-launch.cmd",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "OverwriteExistingFiles": true,
+        "SkipOnFailure": true
+    },
+    {
         "UpdateStageName": "MOTD Directory Creation (Windows)",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "CreateDirectory",
@@ -58,5 +89,12 @@
         "UpdateSource": "SetExecutableFlag",
         "UpdateSourceArgs": "{{$FullBaseDir}}LinuxServer/BeastsOfBermuda/Binaries/Linux/BeastsOfBermudaServer",
         "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Set Launch Wrapper Executable Flag",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "SetExecutableFlag",
+        "UpdateSourceArgs": "{{$FullBaseDir}}bob-launch.sh",
+        "SkipOnFailure": true
     }
 ]
