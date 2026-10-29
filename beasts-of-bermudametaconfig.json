@@ -57,10 +57,49 @@
                     "PlayerChatTags=": "PlayerChatTags",
                     "ServerAdminPassword=": "ServerAdminPassword",
                     "!WorldEventBuffsToNotUse=": "WorldEventBuffsClearArray",
+                    "WorldEventBuffsToNotUse=EVENT_WeatherImmunity": "DisableWorldEventWeatherImmunity",
+                    "WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain": "DisableWorldEventLowFoodWaterDrain",
+                    "WorldEventBuffsToNotUse=EVENT_AutoResurrection": "DisableWorldEventAutoResurrection",
+                    "WorldEventBuffsToNotUse=EVENT_AISwarm": "DisableWorldEventAISwarm",
+                    "WorldEventBuffsToNotUse=EVENT_Nesting": "DisableWorldEventNesting",
+                    "WorldEventBuffsToNotUse=EVENT_GrowthBuff": "DisableWorldEventGrowthBuff",
+                    "WorldEventBuffsToNotUse=EVENT_PledgeAmplify": "DisableWorldEventPledgeAmplify",
+                    "WorldEventBuffsToNotUse=EVENT_Reskin": "DisableWorldEventReskin",
+                    "WorldEventBuffsToNotUse=": "WorldEventBuffsExtra",
                     "!AdminCommandRules=": "AdminCommandRulesClearArray",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\u0022": "AdminCommandAnnounce",
+                    "AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\u0022": "AdminCommandBanPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\u0022": "AdminCommandCheckServerData",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\u0022": "AdminCommandClearBones",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\u0022": "AdminCommandClearCarcasses",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\u0022": "AdminCommandControlServer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\u0022": "AdminCommandControlWeather",
+                    "AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\u0022": "AdminCommandEditFoliage",
+                    "AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\u0022": "AdminCommandGroupInvitesOnly",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\u0022": "AdminCommandGroups",
+                    "AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\u0022": "AdminCommandGrowEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\u0022": "AdminCommandKickPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\u0022": "AdminCommandModifyEggsAndNesting",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\u0022": "AdminCommandModifyServerData",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\u0022": "AdminCommandModifyTalents",
+                    "AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\u0022": "AdminCommandPossessEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\u0022": "AdminCommandRespawnPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\u0022": "AdminCommandServerMutePlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\u0022": "AdminCommandSpawnEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\u0022": "AdminCommandTeleport",
+                    "AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\u0022": "AdminCommandUseObserver",
+                    "AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\u0022": "AdminCommandRestartMap",
+                    "AdminCommandRules=(CommandType=EAdminCommands::FlushServerData,MinimalRank=\u0022": "AdminCommandFlushServerData",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ForceSaveData,MinimalRank=\u0022": "AdminCommandForceSaveData",
+                    "AdminCommandRules=": "AdminCommandRulesExtra",
                     "!CreatureLimits=": "CreatureLimitsClearArray",
                     "!GrowthLimits=": "GrowthLimitsClearArray",
                     "!DisabledAITypes=": "DisabledAITypesClearArray",
+                    "DisabledAITypes=EDinoType::Arganodus": "DisableAIArganodus",
+                    "DisabledAITypes=EDinoType::Auroraceratops": "DisableAIAuroraceratops",
+                    "DisabledAITypes=EDinoType::HorseshoeCrab": "DisableAIHorseshoeCrab",
+                    "DisabledAITypes=EDinoType::Malawania": "DisableAIMalawania",
+                    "DisabledAITypes=": "DisabledAITypesExtra",
                     "!PlayerChatColors=": "PlayerChatColorsClearArray",
                     "!PlayerChatTags=": "PlayerChatTagsClearArray",
                     "!AllowedSpeciesGroups=": "AllowedSpeciesGroupsClearArray",
@@ -99,127 +138,11 @@
                     "bRequiresSteamGroupToJoin=": "bRequiresSteamGroupToJoin",
                     "!WorldEventBuffWeights=": "WorldEventBuffWeightsClearArray",
                     "WorldEventBuffWeights=": "WorldEventBuffWeights",
-                    "+WorldEventBuffWeights=": "WorldEventBuffWeights",
-                    "+AutoMessages=": "AutoMessages",
-                    "+ProfanityWords=": "ProfanityWords",
-                    "DisabledAITypes=": "DisabledAITypesExtra",
                     "SteamWorkshopFoliageSaveItemIDs=": "SteamWorkshopFoliageSaveItemIDs",
                     "GameServerLoginToken=": "GameServerLoginToken",
                     "bUpdateFoliageFilesFromWorkshop=": "bUpdateFoliageFilesFromWorkshop",
-                    "AdminCommandRules=": "AdminCommandRulesExtra",
                     "CreatureLimits=(CreatureType=EDinoType::Zupaysaurus,": "CreatureLimitsZupaysaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Acrocanthosaurus,": "CreatureLimitsAcrocanthosaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Apatosaurus,": "CreatureLimitsApatosaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Archelon,": "CreatureLimitsArchelon",
-                    "+CreatureLimits=(CreatureType=EDinoType::Arganodus,": "CreatureLimitsArganodus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Auroraceratops,": "CreatureLimitsAuroraceratops",
-                    "+CreatureLimits=(CreatureType=EDinoType::Coahuilaceratops,": "CreatureLimitsCoahuilaceratops",
-                    "+CreatureLimits=(CreatureType=EDinoType::Elasmosaurus,": "CreatureLimitsElasmosaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::HorseshoeCrab,": "CreatureLimitsHorseshoeCrab",
-                    "+CreatureLimits=(CreatureType=EDinoType::Kronosaurus,": "CreatureLimitsKronosaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Ichthyovenator,": "CreatureLimitsIchthyovenator",
-                    "+CreatureLimits=(CreatureType=EDinoType::Lurdusaurus,": "CreatureLimitsLurdusaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Malawania,": "CreatureLimitsMalawania",
-                    "+CreatureLimits=(CreatureType=EDinoType::Megalosaurus,": "CreatureLimitsMegalosaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Megaraptor,": "CreatureLimitsMegaraptor",
-                    "+CreatureLimits=(CreatureType=EDinoType::Mosasaurus,": "CreatureLimitsMosasaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Oryctodromeus,": "CreatureLimitsOryctodromeus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Pachycephalosaurus,": "CreatureLimitsPachycephalosaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Palaeophis,": "CreatureLimitsPalaeophis",
-                    "+CreatureLimits=(CreatureType=EDinoType::Parasaurolophus,": "CreatureLimitsParasaurolophus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Pteranodon,": "CreatureLimitsPteranodon",
-                    "+CreatureLimits=(CreatureType=EDinoType::Saichania,": "CreatureLimitsSaichania",
-                    "+CreatureLimits=(CreatureType=EDinoType::Tropeognathus,": "CreatureLimitsTropeognathus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Tyrannosaurus,": "CreatureLimitsTyrannosaurus",
-                    "+CreatureLimits=(CreatureType=EDinoType::Utahraptor,": "CreatureLimitsUtahraptor",
-                    "+CreatureLimits=(CreatureType=EDinoType::Velociraptor,": "CreatureLimitsVelociraptor",
-                    "+CreatureLimits=(CreatureType=EDinoType::Zupaysaurus,": "CreatureLimitsZupaysaurus",
-                    "+CreatureLimits=": "CreatureLimitsExtra",
                     "": "CustomSettings"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventWeatherImmunity"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventLowFoodWaterDrain"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventAutoResurrection"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventAISwarm"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventNesting"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventGrowthBuff"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventPledgeAmplify"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "DisableWorldEventReskin"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "WorldEventBuffsToNotUse=": "WorldEventBuffsExtra"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "ConfigFormat": "{0}{1}\")",
-                "SettingMappings": {
-                    "AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"": "AdminCommandAnnounce",
-                    "AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"": "AdminCommandBanPlayer",
-                    "AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"": "AdminCommandCheckServerData",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"": "AdminCommandClearBones",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"": "AdminCommandClearCarcasses",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"": "AdminCommandControlServer",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"": "AdminCommandControlWeather",
-                    "AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"": "AdminCommandEditFoliage",
-                    "AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"": "AdminCommandGroupInvitesOnly",
-                    "AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"": "AdminCommandGroups",
-                    "AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"": "AdminCommandGrowEntity",
-                    "AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"": "AdminCommandKickPlayer",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"": "AdminCommandModifyEggsAndNesting",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"": "AdminCommandModifyServerData",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"": "AdminCommandModifyTalents",
-                    "AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"": "AdminCommandPossessEntity",
-                    "AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"": "AdminCommandRespawnPlayer",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"": "AdminCommandServerMutePlayer",
-                    "AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"": "AdminCommandSpawnEntity",
-                    "AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"": "AdminCommandTeleport",
-                    "AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"": "AdminCommandUseObserver",
-                    "AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"": "AdminCommandRestartMap",
-                    "AdminCommandRules=(CommandType=EAdminCommands::FlushServerData,MinimalRank=\"": "AdminCommandFlushServerData",
-                    "AdminCommandRules=(CommandType=EAdminCommands::ForceSaveData,MinimalRank=\"": "AdminCommandForceSaveData"
                 }
             },
             {
@@ -252,36 +175,6 @@
                     "GrowthLimits=(Type=EDinoType::Utahraptor,Limit=": "GrowthLimitUtahraptor",
                     "GrowthLimits=(Type=EDinoType::Velociraptor,Limit=": "GrowthLimitVelociraptor",
                     "GrowthLimits=(Type=EDinoType::Zupaysaurus,Limit=": "GrowthLimitZupaysaurus"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "+DisabledAITypes=": "DisableAIArganodus"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "+DisabledAITypes=": "DisableAIAuroraceratops"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "+DisabledAITypes=": "DisableAIHorseshoeCrab"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "+DisabledAITypes=": "DisableAIMalawania"
-                }
-            },
-            {
-                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
-                "SettingMappings": {
-                    "+DisabledAITypes=": "DisabledAITypesExtra"
                 }
             },
             {
