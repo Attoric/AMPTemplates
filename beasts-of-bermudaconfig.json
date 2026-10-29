@@ -492,10 +492,151 @@
         "Placeholder": "120"
     },
     {
-        "DisplayName": "Ocean Height Adjustment",
+        "DisplayName": "World Event Buffs Clear Array",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "Adjusts the default ocean level (WeatherControllerBase OceanHeightAdd).",
+        "Description": "Always writes !WorldEventBuffsToNotUse=ClearArray before the disable toggles so omitted events can spawn again.",
+        "Keywords": "worldeventbuffstonotuse,cleararray",
+        "FieldName": "WorldEventBuffsClearArray",
+        "InputType": "hidden",
+        "ParamFieldName": "WorldEventBuffsClearArray",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Hidden": true
+    },
+    {
+        "DisplayName": "Disable Weather Immunity Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_WeatherImmunity (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_WeatherImmunity.",
+        "Keywords": "world,event,weatherimmunity,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventWeatherImmunity",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventWeatherImmunity",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Disable Low Food and Water Drain Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_LowFoodWaterDrain (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain.",
+        "Keywords": "world,event,lowfoodwaterdrain,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventLowFoodWaterDrain",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventLowFoodWaterDrain",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Disable Auto Resurrection Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_AutoResurrection (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_AutoResurrection.",
+        "Keywords": "world,event,autoresurrection,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventAutoResurrection",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventAutoResurrection",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Disable AI Swarm Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_AISwarm (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_AISwarm.",
+        "Keywords": "world,event,aiswarm,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventAISwarm",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventAISwarm",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Disable Nesting Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_Nesting (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_Nesting.",
+        "Keywords": "world,event,nesting,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventNesting",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventNesting",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Disable Growth Buff Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_GrowthBuff (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_GrowthBuff.",
+        "Keywords": "world,event,growthbuff,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventGrowthBuff",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventGrowthBuff",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Disable Pledge Amplify Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_PledgeAmplify (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_PledgeAmplify.",
+        "Keywords": "world,event,pledgeamplify,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventPledgeAmplify",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventPledgeAmplify",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Disable Reskin Event",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "World:public:3",
+        "Description": "If enabled, world events will not use EVENT_Reskin (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_Reskin.",
+        "Keywords": "world,event,reskin,worldeventbuffstonotuse",
+        "FieldName": "DisableWorldEventReskin",
+        "InputType": "checkbox",
+        "ParamFieldName": "DisableWorldEventReskin",
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "\n"
+        },
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Ocean Height Add",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Weather:cloud:4",
+        "Description": "Adds to the default ocean height (WeatherControllerBase OceanHeightAdd). Cleafspear emits this as a float, e.g. 1.0.",
         "Keywords": "ocean,height,oceanheightadd",
         "FieldName": "OceanHeightAdd",
         "InputType": "number",
@@ -550,11 +691,11 @@
         }
     },
     {
-        "DisplayName": "Disable Character Death",
+        "DisplayName": "Enable Auto Revive",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, character death is disabled (SaveSystem).",
-        "Keywords": "death,character,bdisablecharacterdeath",
+        "Description": "If enabled, players who die are revived instead of losing the character (SaveSystem bDisableCharacterDeath). true means auto revive is on.",
+        "Keywords": "death,revive,auto,bdisablecharacterdeath",
         "FieldName": "bDisableCharacterDeath",
         "InputType": "checkbox",
         "ParamFieldName": "/Script/BeastsOfBermuda.SaveSystem.bDisableCharacterDeath",
@@ -861,7 +1002,7 @@
         "DisplayName": "Skin Lock Growth Threshold",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Growth:spa:7",
-        "Description": "Max growth at which players can still edit their skin (Skins SkinLockGrowthThreshold).",
+        "Description": "Growth at which players can no longer edit their skin (Skins SkinLockGrowthThreshold). Cleafspear default is 0.8; 1.2 is a later lock.",
         "Keywords": "skin,lock,growth,skinlockgrowththreshold",
         "FieldName": "SkinLockGrowthThreshold",
         "InputType": "number",
@@ -990,22 +1131,460 @@
         "DisplayName": "Reserved Admin Slots",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Slots reserved for administrators. Filled when an admin joins. Default is 2.",
+        "Description": "Always written as 2. Raising reserved admin slots can lock admins out when the server is full.",
         "Keywords": "reserved,admin,slots,reservedadminslots",
         "FieldName": "ReservedAdminSlots",
         "InputType": "number",
         "ParamFieldName": "/Script/BeastsOfBermuda.ServerGameInstance.ReservedAdminSlots",
         "DefaultValue": "2",
         "EnumValues": {},
-        "MinValue": "0",
-        "Suffix": "slots",
-        "Placeholder": "2"
+        "Hidden": true,
+        "ExcludeFromImport": true
+    },
+    {
+        "DisplayName": "Admin Command Rules Clear Array",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Always writes !AdminCommandRules=ClearArray so the dropdowns fully own the command-rank list.",
+        "Keywords": "admincommandrules,cleararray",
+        "FieldName": "AdminCommandRulesClearArray",
+        "InputType": "hidden",
+        "ParamFieldName": "AdminCommandRulesClearArray",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "Hidden": true
+    },
+    {
+        "DisplayName": "Announce Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::Announce. Writes AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,announce,admincommandrules",
+        "FieldName": "AdminCommandAnnounce",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandAnnounce",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "BanPlayer Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::BanPlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,banplayer,admincommandrules",
+        "FieldName": "AdminCommandBanPlayer",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandBanPlayer",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "CheckServerData Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::CheckServerData. Writes AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,checkserverdata,admincommandrules",
+        "FieldName": "AdminCommandCheckServerData",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandCheckServerData",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ClearBones Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ClearBones. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,clearbones,admincommandrules",
+        "FieldName": "AdminCommandClearBones",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandClearBones",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ClearCarcasses Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ClearCarcasses. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,clearcarcasses,admincommandrules",
+        "FieldName": "AdminCommandClearCarcasses",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandClearCarcasses",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ControlServer Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ControlServer. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,controlserver,admincommandrules",
+        "FieldName": "AdminCommandControlServer",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandControlServer",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ControlWeather Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ControlWeather. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,controlweather,admincommandrules",
+        "FieldName": "AdminCommandControlWeather",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandControlWeather",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "EditFoliage Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::EditFoliage. Writes AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,editfoliage,admincommandrules",
+        "FieldName": "AdminCommandEditFoliage",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandEditFoliage",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "GroupInvitesOnly Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::GroupInvitesOnly. Writes AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,groupinvitesonly,admincommandrules",
+        "FieldName": "AdminCommandGroupInvitesOnly",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandGroupInvitesOnly",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "Groups Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::Groups. Writes AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,groups,admincommandrules",
+        "FieldName": "AdminCommandGroups",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandGroups",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "GrowEntity Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::GrowEntity. Writes AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,growentity,admincommandrules",
+        "FieldName": "AdminCommandGrowEntity",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandGrowEntity",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "KickPlayer Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::KickPlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,kickplayer,admincommandrules",
+        "FieldName": "AdminCommandKickPlayer",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandKickPlayer",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ModifyEggsAndNesting Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyEggsAndNesting. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,modifyeggsandnesting,admincommandrules",
+        "FieldName": "AdminCommandModifyEggsAndNesting",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandModifyEggsAndNesting",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ModifyServerData Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyServerData. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,modifyserverdata,admincommandrules",
+        "FieldName": "AdminCommandModifyServerData",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandModifyServerData",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ModifyTalents Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyTalents. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,modifytalents,admincommandrules",
+        "FieldName": "AdminCommandModifyTalents",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandModifyTalents",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "PossessEntity Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::PossessEntity. Writes AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,possessentity,admincommandrules",
+        "FieldName": "AdminCommandPossessEntity",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandPossessEntity",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "RespawnPlayer Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::RespawnPlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,respawnplayer,admincommandrules",
+        "FieldName": "AdminCommandRespawnPlayer",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandRespawnPlayer",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "ServerMutePlayer Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::ServerMutePlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,servermuteplayer,admincommandrules",
+        "FieldName": "AdminCommandServerMutePlayer",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandServerMutePlayer",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "SpawnEntity Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::SpawnEntity. Writes AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,spawnentity,admincommandrules",
+        "FieldName": "AdminCommandSpawnEntity",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandSpawnEntity",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "Teleport Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::Teleport. Writes AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,teleport,admincommandrules",
+        "FieldName": "AdminCommandTeleport",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandTeleport",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "UseObserver Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::UseObserver. Writes AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,useobserver,admincommandrules",
+        "FieldName": "AdminCommandUseObserver",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandUseObserver",
+        "DefaultValue": "Admin\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "RestartMap Minimum Rank",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Administration:security:11",
+        "Description": "Minimum admin rank for EAdminCommands::RestartMap. Writes AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Keywords": "admin,rank,restartmap,admincommandrules",
+        "FieldName": "AdminCommandRestartMap",
+        "InputType": "enum",
+        "ParamFieldName": "AdminCommandRestartMap",
+        "DefaultValue": "Owner\")",
+        "EnumValues": {
+            "NoAdmin\")": "NoAdmin",
+            "DefaultAdmin\")": "DefaultAdmin",
+            "Admin\")": "Admin",
+            "Owner\")": "Owner"
+        }
+    },
+    {
+        "DisplayName": "Admin Ranks",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Admins:badge:12",
+        "Description": "One AdminRanks line-body per line. AMP prefixes AdminRanks= on the first line. For more than one rank, start each extra line with AdminRanks=. Example: (AdminRank=\"Admin\",RankLevel=1) then AdminRanks=(AdminRank=\"Owner\",RankLevel=2). Wiki: AdminRanks=(AdminRank=\"DefaultAdmin\", RankLevel = 0). Higher RankLevel is a higher admin.",
+        "Keywords": "adminranks,rank,admin",
+        "FieldName": "AdminRanks",
+        "InputType": "Textarea",
+        "ParamFieldName": "AdminRanks",
+        "DefaultValue": "(AdminRank=\"DefaultAdmin\",RankLevel=0)\nAdminRanks=(AdminRank=\"Admin\",RankLevel=1)\nAdminRanks=(AdminRank=\"Owner\",RankLevel=2)",
+        "EnumValues": {},
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Server Admins",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Admins:badge:12",
+        "Description": "One administrator per line. AMP prefixes ServerAdmins= on the first line. For more than one admin, start each extra line with ServerAdmins=. Example: (UserSteamId64=76561198000000000,AdminRank=\"Admin\"). Wiki/Cleafspear: ServerAdmins=(UserSteamId64=...,AdminRank=\"DefaultAdmin\"). Use a SteamID64, not a persona name.",
+        "Keywords": "serveradmins,steam,admin",
+        "FieldName": "ServerAdmins",
+        "InputType": "Textarea",
+        "ParamFieldName": "ServerAdmins",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Player Chat Colors",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Colors:palette:13",
+        "Description": "One PlayerChatColors body per line. AMP prefixes PlayerChatColors= on the first line. For more than one color, start each extra line with PlayerChatColors=. Example: (SteamID=76561198000000000,ChatColor=(R=1.0,G=0.0,B=0.0,A=1.0)). Wiki: PlayerChatColors=(SteamID=PlayerId64, ChatColor=(R=1.00,G=0.00,B=0.00,A=1.00)). Cleafspear uses 0.0-1.0 RGB.",
+        "Keywords": "playerchatcolors,color,chat",
+        "FieldName": "PlayerChatColors",
+        "InputType": "Textarea",
+        "ParamFieldName": "PlayerChatColors",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "SkipIfEmpty": true
+    },
+    {
+        "DisplayName": "Player Chat Tags",
+        "Category": "Beasts of Bermuda:stadia_controller",
+        "Subcategory": "Tags:label:14",
+        "Description": "One PlayerChatTags body per line. AMP prefixes PlayerChatTags= on the first line. For more than one tag, start each extra line with PlayerChatTags=. Example: (SteamID=76561198000000000,ChatTag=\"Staff\"). Wiki: PlayerChatTags=(SteamID=PlayerId64, ChatTag=\"Admin\").",
+        "Keywords": "playerchattags,tag,chat",
+        "FieldName": "PlayerChatTags",
+        "InputType": "Textarea",
+        "ParamFieldName": "PlayerChatTags",
+        "DefaultValue": "",
+        "EnumValues": {},
+        "SkipIfEmpty": true
     },
     {
         "DisplayName": "Additional ServerGameInstance Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Lines:tune:12",
-        "Description": "Lines written into [/Script/BeastsOfBermuda.ServerGameInstance] that AMP does not manage as individual settings. One line per entry, exactly as they should appear in Game.ini, including !Key=ClearArray and +Key=... where required. Typical lines: CreatureLimits, GrowthLimits, AllowedSpeciesGroups, DisabledAITypes, WorldEventBuffsToNotUse, AdminRanks, AdminCommandRules, ServerAdmins, PlayerChatColors, PlayerChatTags, AdminAllowedCommands, AdminBlockedCommands, ProfanityWords, ServerAdminPassword, AutoMessages. Import Configuration fills this box from leftover lines in that section. Do not repeat keys that already have AMP settings, or they will be written twice. On Linux, Config, SaveGames, and User under LinuxServer/BeastsOfBermuda/Saved are symlinks to the WindowsServer folders, so this Game.ini is the real file; Logs and Crashes are not linked.",
+        "Subcategory": "Extra Lines:tune:15",
+        "Description": "Catch-all leftover lines for [/Script/BeastsOfBermuda.ServerGameInstance] that AMP does not manage as individual settings. One line per entry, including !Key=ClearArray and +Key=... where required. Typical leftovers: CreatureLimits, GrowthLimits, AllowedSpeciesGroups, DisabledAITypes, AdminAllowedCommands, AdminBlockedCommands, ProfanityWords, ServerAdminPassword, AutoMessages. Do not repeat keys that already have AMP settings. On Linux, Config, SaveGames, and User under LinuxServer/BeastsOfBermuda/Saved are symlinks to the WindowsServer folders; Logs and Crashes are not linked.",
         "Keywords": "custom,settings,creaturelimits,growthlimits,adminranks,serveradmins,playerchattags",
         "FieldName": "CustomSettings",
         "InputType": "Textarea",
@@ -1014,81 +1593,35 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Additional Skins Settings",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Lines:tune:12",
-        "Description": "Leftover lines written into the [Skins] section. One line per entry. Import fills this from unmapped [Skins] lines.",
-        "Keywords": "skins,custom,gameini",
-        "FieldName": "SkinsUserSettings",
-        "InputType": "Textarea",
-        "ParamFieldName": "SkinsUserSettings",
-        "DefaultValue": "",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Additional WeatherControllerBase Settings",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Lines:tune:12",
-        "Description": "Leftover lines written into [/Script/BeastsOfBermuda.WeatherControllerBase]. One line per entry. Import fills this from unmapped lines in that section.",
-        "Keywords": "weather,custom,gameini",
-        "FieldName": "WeatherControllerUserSettings",
-        "InputType": "Textarea",
-        "ParamFieldName": "WeatherControllerUserSettings",
-        "DefaultValue": "",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Additional SaveSystem Settings",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Lines:tune:12",
-        "Description": "Leftover lines written into [/Script/BeastsOfBermuda.SaveSystem]. One line per entry. Import fills this from unmapped lines in that section.",
-        "Keywords": "save,custom,gameini",
-        "FieldName": "SaveSystemUserSettings",
-        "InputType": "Textarea",
-        "ParamFieldName": "SaveSystemUserSettings",
-        "DefaultValue": "",
-        "EnumValues": {}
-    },
-    {
-        "DisplayName": "Additional GameReporter Settings",
-        "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Lines:tune:12",
-        "Description": "Leftover lines written into [GameReporter]. One line per entry. Import fills this from unmapped webhook lines. Do not repeat keys that already have AMP webhook settings.",
-        "Keywords": "gamereporter,webhook,custom,gameini",
-        "FieldName": "GameReporterUserSettings",
-        "InputType": "Textarea",
-        "ParamFieldName": "GameReporterUserSettings",
-        "DefaultValue": "",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Additional BBGameModeBase Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Lines:tune:12",
-        "Description": "Lines written into [/Script/BeastsOfBermuda.BBGameModeBase]. Use this for leftover Game RCON lines such as bLiveMessagesToRCON (not AMP settings). One line per entry.",
+        "Subcategory": "Extra Lines:tune:15",
+        "Description": "Hidden passthrough so AMP Subsections rewrite does not drop leftover lines in this Game.ini heading.",
         "Keywords": "rcon,bbgamemodebase,blivemessagestorcon",
         "FieldName": "BBGameModeBaseUserSettings",
         "InputType": "Textarea",
         "ParamFieldName": "BBGameModeBaseUserSettings",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "Hidden": true
     },
     {
         "DisplayName": "Additional RCONHandler Settings",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Extra Lines:tune:12",
-        "Description": "Lines written into [/Script/BeastsOfBermuda.RCONHandler]. Use this for leftover CommunicationPort / IP4Binding lines if present. One line per entry.",
+        "Subcategory": "Extra Lines:tune:15",
+        "Description": "Hidden passthrough so AMP Subsections rewrite does not drop leftover lines in this Game.ini heading.",
         "Keywords": "rcon,rconhandler,communicationport,ip4binding",
         "FieldName": "RCONHandlerUserSettings",
         "InputType": "Textarea",
         "ParamFieldName": "RCONHandlerUserSettings",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "Hidden": true
     },
     {
         "DisplayName": "Enable Chat Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Sends chat activity to Discord when the webhook ID is set.",
         "Keywords": "discord,webhook,chat,busechatwebhook",
         "FieldName": "bUseChatWebhook",
@@ -1103,7 +1636,7 @@
     {
         "DisplayName": "Chat Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
         "Keywords": "chat,webhook,chatreportdiscordwebhook",
         "FieldName": "ChatReportDiscordWebhook",
@@ -1116,7 +1649,7 @@
     {
         "DisplayName": "Chat Webhook Icon URL",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Optional image URL used as the chat webhook avatar.",
         "Keywords": "chat,webhook,icon,chatreporticonurl",
         "FieldName": "ChatReportIconURL",
@@ -1129,7 +1662,7 @@
     {
         "DisplayName": "Chat Webhook Format",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Format string. [:x01] is a backtick; \\n is a newline. Placeholders include {PlayerInfo}, {ChatMode}, {msg}.",
         "Keywords": "chat,webhook,format,chatwebhookformatstyle",
         "FieldName": "ChatWebhookFormatStyle",
@@ -1142,7 +1675,7 @@
     {
         "DisplayName": "Enable Login Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Sends join/leave reports to Discord.",
         "Keywords": "discord,webhook,login,buseloginreportwebhook",
         "FieldName": "bUseLoginReportWebhook",
@@ -1157,7 +1690,7 @@
     {
         "DisplayName": "Login Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
         "Keywords": "login,webhook,logindiscordwebhook",
         "FieldName": "LoginDiscordWebhook",
@@ -1170,7 +1703,7 @@
     {
         "DisplayName": "Login Webhook Icon URL",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Optional image URL used as the login webhook avatar.",
         "Keywords": "login,webhook,icon,logindiscordiconurl",
         "FieldName": "LoginDiscordIconURL",
@@ -1183,7 +1716,7 @@
     {
         "DisplayName": "Login Webhook Format",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Join format. Placeholders include {PlayerInfo} and {Server}.",
         "Keywords": "login,webhook,format,loginreportformatstyle",
         "FieldName": "LoginReportFormatStyle",
@@ -1196,7 +1729,7 @@
     {
         "DisplayName": "Logout Webhook Format",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Leave format. Placeholders include {PlayerInfo}, {Server}, {Hours}, {Minutes}.",
         "Keywords": "logout,webhook,format,logoutreportformatstyle",
         "FieldName": "LogoutReportFormatStyle",
@@ -1209,7 +1742,7 @@
     {
         "DisplayName": "Enable Admin Command Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Sends admin command usage to Discord.",
         "Keywords": "discord,webhook,admin,command,buseadmincommandusagewebhook",
         "FieldName": "bUseAdminCommandUsageWebhook",
@@ -1224,7 +1757,7 @@
     {
         "DisplayName": "Admin Command Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
         "Keywords": "admin,command,webhook,admincmddiscordwebhook",
         "FieldName": "AdminCmdDiscordWebhook",
@@ -1237,7 +1770,7 @@
     {
         "DisplayName": "Admin Command Webhook Icon URL",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Optional image URL used as the command webhook avatar.",
         "Keywords": "admin,command,icon,admincmddiscordicon",
         "FieldName": "AdminCmdDiscordIcon",
@@ -1250,7 +1783,7 @@
     {
         "DisplayName": "Admin Command Webhook Format",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Format string. Placeholders include {PlayerInfo} and {Cmd}.",
         "Keywords": "admin,command,format,admincommandusageformatstyle",
         "FieldName": "AdminCommandUsageFormatStyle",
@@ -1263,7 +1796,7 @@
     {
         "DisplayName": "Enable Group Activity Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Sends group create/join/leave activity to Discord.",
         "Keywords": "discord,webhook,group,busegroupactivitywebhook",
         "FieldName": "bUseGroupActivityWebhook",
@@ -1278,7 +1811,7 @@
     {
         "DisplayName": "Group Activity Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
         "Keywords": "group,webhook,groupactivitydiscordwebhook",
         "FieldName": "GroupActivityDiscordWebhook",
@@ -1291,7 +1824,7 @@
     {
         "DisplayName": "Group Activity Webhook Icon URL",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Optional image URL used as the group webhook avatar.",
         "Keywords": "group,webhook,icon,groupactivitydiscordiconurl",
         "FieldName": "GroupActivityDiscordIconURL",
@@ -1304,7 +1837,7 @@
     {
         "DisplayName": "Enable Combat Activity Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Sends combat/death logs to Discord.",
         "Keywords": "discord,webhook,combat,busecombatactivitywebhook",
         "FieldName": "bUseCombatActivityWebhook",
@@ -1319,7 +1852,7 @@
     {
         "DisplayName": "Combat Activity Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
         "Keywords": "combat,webhook,combatactivitydiscordwebhook",
         "FieldName": "CombatActivityDiscordWebhook",
@@ -1332,7 +1865,7 @@
     {
         "DisplayName": "Combat Activity Webhook Icon URL",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Optional image URL used as the combat webhook avatar.",
         "Keywords": "combat,webhook,icon,combatactivitydiscordiconurl",
         "FieldName": "CombatActivityDiscordIconURL",
@@ -1345,7 +1878,7 @@
     {
         "DisplayName": "Enable Events Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Sends world-event reports to Discord.",
         "Keywords": "discord,webhook,events,buseeventswebhook",
         "FieldName": "bUseEventsWebhook",
@@ -1360,7 +1893,7 @@
     {
         "DisplayName": "Events Webhook",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Use the Discord webhook path only (id/token), not the full https://discord.com/api/webhooks/ URL.",
         "Keywords": "events,webhook,eventsdiscordwebhook",
         "FieldName": "EventsDiscordWebhook",
@@ -1373,7 +1906,7 @@
     {
         "DisplayName": "Events Webhook Icon URL",
         "Category": "Beasts of Bermuda:stadia_controller",
-        "Subcategory": "Discord Webhooks:webhook:13",
+        "Subcategory": "Discord Webhooks:webhook:16",
         "Description": "Optional image URL used as the events webhook avatar.",
         "Keywords": "events,webhook,icon,eventsdiscordiconurl",
         "FieldName": "EventsDiscordIconURL",

@@ -9,7 +9,6 @@
                 "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
                 "SettingMappings": {
                     "MapNameOverride=": "MapNameOverride",
-                    "GameMode=": "GameMode",
                     "PreferredGameExperience=": "PreferredGameExperience",
                     "bDisplayDiscordLink=": "bDisplayDiscordLink",
                     "DiscordLink=": "DiscordLink",
@@ -51,14 +50,50 @@
                     "bDisplayIntroMessage=": "bDisplayIntroMessage",
                     "bConsoleLocked=": "bConsoleLocked",
                     "ReservedAdminSlots=": "ReservedAdminSlots",
+                    "GameMode=": "GameMode",
+                    "!WorldEventBuffsToNotUse=ClearArray": "WorldEventBuffsClearArray",
+                    "WorldEventBuffsToNotUse=EVENT_WeatherImmunity": "DisableWorldEventWeatherImmunity",
+                    "WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain": "DisableWorldEventLowFoodWaterDrain",
+                    "WorldEventBuffsToNotUse=EVENT_AutoResurrection": "DisableWorldEventAutoResurrection",
+                    "WorldEventBuffsToNotUse=EVENT_AISwarm": "DisableWorldEventAISwarm",
+                    "WorldEventBuffsToNotUse=EVENT_Nesting": "DisableWorldEventNesting",
+                    "WorldEventBuffsToNotUse=EVENT_GrowthBuff": "DisableWorldEventGrowthBuff",
+                    "WorldEventBuffsToNotUse=EVENT_PledgeAmplify": "DisableWorldEventPledgeAmplify",
+                    "WorldEventBuffsToNotUse=EVENT_Reskin": "DisableWorldEventReskin",
+                    "!AdminCommandRules=ClearArray": "AdminCommandRulesClearArray",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"": "AdminCommandAnnounce",
+                    "AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"": "AdminCommandBanPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"": "AdminCommandCheckServerData",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"": "AdminCommandClearBones",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"": "AdminCommandClearCarcasses",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"": "AdminCommandControlServer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"": "AdminCommandControlWeather",
+                    "AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"": "AdminCommandEditFoliage",
+                    "AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"": "AdminCommandGroupInvitesOnly",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"": "AdminCommandGroups",
+                    "AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"": "AdminCommandGrowEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"": "AdminCommandKickPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"": "AdminCommandModifyEggsAndNesting",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"": "AdminCommandModifyServerData",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"": "AdminCommandModifyTalents",
+                    "AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"": "AdminCommandPossessEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"": "AdminCommandRespawnPlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"": "AdminCommandServerMutePlayer",
+                    "AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"": "AdminCommandSpawnEntity",
+                    "AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"": "AdminCommandTeleport",
+                    "AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"": "AdminCommandUseObserver",
+                    "AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"": "AdminCommandRestartMap",
+                    "AdminRanks=": "AdminRanks",
+                    "ServerAdmins=": "ServerAdmins",
+                    "PlayerChatColors=": "PlayerChatColors",
+                    "PlayerChatTags=": "PlayerChatTags",
                     "": "CustomSettings"
                 }
             },
             {
                 "Heading": "Skins",
                 "SettingMappings": {
-                    "SkinLockGrowthThreshold=": "SkinLockGrowthThreshold",
-                    "": "SkinsUserSettings"
+                    "SkinLockGrowthThreshold=": "SkinLockGrowthThreshold"
                 }
             },
             {
@@ -75,16 +110,14 @@
                     "RainCommonness=": "RainCommonness",
                     "FogCommonness=": "FogCommonness",
                     "OvercastCommonness=": "OvercastCommonness",
-                    "DryLightningCommonness=": "DryLightningCommonness",
-                    "": "WeatherControllerUserSettings"
+                    "DryLightningCommonness=": "DryLightningCommonness"
                 }
             },
             {
                 "Heading": "/Script/BeastsOfBermuda.SaveSystem",
                 "SettingMappings": {
                     "AutosaveTime=": "AutosaveTime",
-                    "bDisableCharacterDeath=": "bDisableCharacterDeath",
-                    "": "SaveSystemUserSettings"
+                    "bDisableCharacterDeath=": "bDisableCharacterDeath"
                 }
             },
             {
@@ -111,8 +144,7 @@
                     "CombatActivityDiscordIconURL=": "CombatActivityDiscordIconURL",
                     "bUseEventsWebhook=": "bUseEventsWebhook",
                     "EventsDiscordWebhook=": "EventsDiscordWebhook",
-                    "EventsDiscordIconURL=": "EventsDiscordIconURL",
-                    "": "GameReporterUserSettings"
+                    "EventsDiscordIconURL=": "EventsDiscordIconURL"
                 }
             },
             {
