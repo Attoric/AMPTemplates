@@ -508,7 +508,7 @@
         "DisplayName": "Disable Weather Immunity Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_WeatherImmunity (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_WeatherImmunity.",
+        "Description": "If enabled, world events will not use EVENT_WeatherImmunity (ServerGameInstance WorldEventBuffsToNotUse=EVENT_WeatherImmunity). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,weatherimmunity,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventWeatherImmunity",
         "InputType": "checkbox",
@@ -516,7 +516,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_WeatherImmunity"
         },
         "SkipIfEmpty": true
     },
@@ -524,7 +524,7 @@
         "DisplayName": "Disable Low Food and Water Drain Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_LowFoodWaterDrain (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain.",
+        "Description": "If enabled, world events will not use EVENT_LowFoodWaterDrain (ServerGameInstance WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,lowfoodwaterdrain,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventLowFoodWaterDrain",
         "InputType": "checkbox",
@@ -532,7 +532,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_LowFoodWaterDrain"
         },
         "SkipIfEmpty": true
     },
@@ -540,7 +540,7 @@
         "DisplayName": "Disable Auto Resurrection Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_AutoResurrection (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_AutoResurrection.",
+        "Description": "If enabled, world events will not use EVENT_AutoResurrection (ServerGameInstance WorldEventBuffsToNotUse=EVENT_AutoResurrection). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,autoresurrection,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventAutoResurrection",
         "InputType": "checkbox",
@@ -548,7 +548,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_AutoResurrection"
         },
         "SkipIfEmpty": true
     },
@@ -556,7 +556,7 @@
         "DisplayName": "Disable AI Swarm Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_AISwarm (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_AISwarm.",
+        "Description": "If enabled, world events will not use EVENT_AISwarm (ServerGameInstance WorldEventBuffsToNotUse=EVENT_AISwarm). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,aiswarm,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventAISwarm",
         "InputType": "checkbox",
@@ -564,7 +564,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_AISwarm"
         },
         "SkipIfEmpty": true
     },
@@ -572,7 +572,7 @@
         "DisplayName": "Disable Nesting Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_Nesting (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_Nesting.",
+        "Description": "If enabled, world events will not use EVENT_Nesting (ServerGameInstance WorldEventBuffsToNotUse=EVENT_Nesting). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,nesting,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventNesting",
         "InputType": "checkbox",
@@ -580,7 +580,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_Nesting"
         },
         "SkipIfEmpty": true
     },
@@ -588,7 +588,7 @@
         "DisplayName": "Disable Growth Buff Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_GrowthBuff (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_GrowthBuff.",
+        "Description": "If enabled, world events will not use EVENT_GrowthBuff (ServerGameInstance WorldEventBuffsToNotUse=EVENT_GrowthBuff). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,growthbuff,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventGrowthBuff",
         "InputType": "checkbox",
@@ -596,7 +596,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_GrowthBuff"
         },
         "SkipIfEmpty": true
     },
@@ -604,7 +604,7 @@
         "DisplayName": "Disable Pledge Amplify Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_PledgeAmplify (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_PledgeAmplify.",
+        "Description": "If enabled, world events will not use EVENT_PledgeAmplify (ServerGameInstance WorldEventBuffsToNotUse=EVENT_PledgeAmplify). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,pledgeamplify,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventPledgeAmplify",
         "InputType": "checkbox",
@@ -612,7 +612,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_PledgeAmplify"
         },
         "SkipIfEmpty": true
     },
@@ -620,7 +620,7 @@
         "DisplayName": "Disable Reskin Event",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "World:public:3",
-        "Description": "If enabled, world events will not use EVENT_Reskin (ServerGameInstance WorldEventBuffsToNotUse). Cleafspear/wiki form: !WorldEventBuffsToNotUse=ClearArray then WorldEventBuffsToNotUse=EVENT_Reskin.",
+        "Description": "If enabled, world events will not use EVENT_Reskin (ServerGameInstance WorldEventBuffsToNotUse=EVENT_Reskin). Generic maps the WorldEventBuffsToNotUse key; the toggle value is the EVENT_ name so Import ticks when that value is present.",
         "Keywords": "world,event,reskin,worldeventbuffstonotuse",
         "FieldName": "DisableWorldEventReskin",
         "InputType": "checkbox",
@@ -628,7 +628,7 @@
         "DefaultValue": "",
         "EnumValues": {
             "False": "",
-            "True": "\n"
+            "True": "EVENT_Reskin"
         },
         "SkipIfEmpty": true
     },
@@ -1158,386 +1158,298 @@
         "DisplayName": "Announce Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::Announce. Writes AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::Announce. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,announce,admincommandrules",
         "FieldName": "AdminCommandAnnounce",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandAnnounce",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "BanPlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::BanPlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::BanPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,banplayer,admincommandrules",
         "FieldName": "AdminCommandBanPlayer",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandBanPlayer",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "CheckServerData Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::CheckServerData. Writes AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::CheckServerData. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,checkserverdata,admincommandrules",
         "FieldName": "AdminCommandCheckServerData",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandCheckServerData",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ClearBones Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ClearBones. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ClearBones. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearBones,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,clearbones,admincommandrules",
         "FieldName": "AdminCommandClearBones",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandClearBones",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ClearCarcasses Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ClearCarcasses. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ClearCarcasses. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ClearCarcasses,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,clearcarcasses,admincommandrules",
         "FieldName": "AdminCommandClearCarcasses",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandClearCarcasses",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ControlServer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ControlServer. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ControlServer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlServer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,controlserver,admincommandrules",
         "FieldName": "AdminCommandControlServer",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandControlServer",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ControlWeather Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ControlWeather. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ControlWeather. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ControlWeather,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,controlweather,admincommandrules",
         "FieldName": "AdminCommandControlWeather",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandControlWeather",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "EditFoliage Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::EditFoliage. Writes AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::EditFoliage. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::EditFoliage,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,editfoliage,admincommandrules",
         "FieldName": "AdminCommandEditFoliage",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandEditFoliage",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "GroupInvitesOnly Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::GroupInvitesOnly. Writes AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::GroupInvitesOnly. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::GroupInvitesOnly,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,groupinvitesonly,admincommandrules",
         "FieldName": "AdminCommandGroupInvitesOnly",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandGroupInvitesOnly",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "Groups Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::Groups. Writes AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::Groups. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Groups,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,groups,admincommandrules",
         "FieldName": "AdminCommandGroups",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandGroups",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "GrowEntity Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::GrowEntity. Writes AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::GrowEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::GrowEntity,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,growentity,admincommandrules",
         "FieldName": "AdminCommandGrowEntity",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandGrowEntity",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "KickPlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::KickPlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::KickPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::KickPlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,kickplayer,admincommandrules",
         "FieldName": "AdminCommandKickPlayer",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandKickPlayer",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ModifyEggsAndNesting Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ModifyEggsAndNesting. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyEggsAndNesting. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyEggsAndNesting,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,modifyeggsandnesting,admincommandrules",
         "FieldName": "AdminCommandModifyEggsAndNesting",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandModifyEggsAndNesting",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ModifyServerData Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ModifyServerData. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyServerData. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyServerData,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,modifyserverdata,admincommandrules",
         "FieldName": "AdminCommandModifyServerData",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandModifyServerData",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ModifyTalents Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ModifyTalents. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ModifyTalents. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ModifyTalents,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,modifytalents,admincommandrules",
         "FieldName": "AdminCommandModifyTalents",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandModifyTalents",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "PossessEntity Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::PossessEntity. Writes AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::PossessEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::PossessEntity,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,possessentity,admincommandrules",
         "FieldName": "AdminCommandPossessEntity",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandPossessEntity",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "RespawnPlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::RespawnPlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::RespawnPlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::RespawnPlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,respawnplayer,admincommandrules",
         "FieldName": "AdminCommandRespawnPlayer",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandRespawnPlayer",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "ServerMutePlayer Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::ServerMutePlayer. Writes AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::ServerMutePlayer. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::ServerMutePlayer,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,servermuteplayer,admincommandrules",
         "FieldName": "AdminCommandServerMutePlayer",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandServerMutePlayer",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "SpawnEntity Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::SpawnEntity. Writes AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::SpawnEntity. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,spawnentity,admincommandrules",
         "FieldName": "AdminCommandSpawnEntity",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandSpawnEntity",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "Teleport Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::Teleport. Writes AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::Teleport. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,teleport,admincommandrules",
         "FieldName": "AdminCommandTeleport",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandTeleport",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "UseObserver Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::UseObserver. Writes AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::UseObserver. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,useobserver,admincommandrules",
         "FieldName": "AdminCommandUseObserver",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandUseObserver",
-        "DefaultValue": "Admin\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Admin",
+        "EnumValues": {},
+        "Placeholder": "Admin"
     },
     {
         "DisplayName": "RestartMap Minimum Rank",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Administration:security:11",
-        "Description": "Minimum admin rank for EAdminCommands::RestartMap. Writes AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"<Rank>\"). Ranks are AdminRank names from Game.ini (wiki DefaultAdmin; Cleafspear also lists NoAdmin). Higher AdminRanks RankLevel can still use the command.",
+        "Description": "Minimum admin rank for EAdminCommands::RestartMap. Must match a rank name from Admin Ranks. Writes AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"<Rank>\"). Import fills any rank string, including custom names.",
         "Keywords": "admin,rank,restartmap,admincommandrules",
         "FieldName": "AdminCommandRestartMap",
-        "InputType": "enum",
+        "InputType": "text",
         "ParamFieldName": "AdminCommandRestartMap",
-        "DefaultValue": "Owner\")",
-        "EnumValues": {
-            "NoAdmin\")": "NoAdmin",
-            "DefaultAdmin\")": "DefaultAdmin",
-            "Admin\")": "Admin",
-            "Owner\")": "Owner"
-        }
+        "DefaultValue": "Owner",
+        "EnumValues": {},
+        "Placeholder": "Owner"
     },
     {
         "DisplayName": "Admin Ranks",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Admins:badge:12",
-        "Description": "One AdminRanks line-body per line. AMP prefixes AdminRanks= on the first line. For more than one rank, start each extra line with AdminRanks=. Example: (AdminRank=\"Admin\",RankLevel=1) then AdminRanks=(AdminRank=\"Owner\",RankLevel=2). Wiki: AdminRanks=(AdminRank=\"DefaultAdmin\", RankLevel = 0). Higher RankLevel is a higher admin.",
+        "Description": "One AdminRanks entry per line. AMP writes AdminRanks= in front of each line. Example: (AdminRank=\"Admin\",RankLevel=1). Wiki: AdminRanks=(AdminRank=\"DefaultAdmin\", RankLevel = 0). Higher RankLevel is a higher admin. Import puts every AdminRanks line in this box.",
         "Keywords": "adminranks,rank,admin",
         "FieldName": "AdminRanks",
         "InputType": "Textarea",
         "ParamFieldName": "AdminRanks",
-        "DefaultValue": "(AdminRank=\"DefaultAdmin\",RankLevel=0)\nAdminRanks=(AdminRank=\"Admin\",RankLevel=1)\nAdminRanks=(AdminRank=\"Owner\",RankLevel=2)",
+        "DefaultValue": "(AdminRank=\"DefaultAdmin\",RankLevel=0)\n(AdminRank=\"Admin\",RankLevel=1)\n(AdminRank=\"Owner\",RankLevel=2)",
         "EnumValues": {},
         "SkipIfEmpty": true
     },
@@ -1545,7 +1457,7 @@
         "DisplayName": "Server Admins",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Admins:badge:12",
-        "Description": "One administrator per line. AMP prefixes ServerAdmins= on the first line. For more than one admin, start each extra line with ServerAdmins=. Example: (UserSteamId64=76561198000000000,AdminRank=\"Admin\"). Wiki/Cleafspear: ServerAdmins=(UserSteamId64=...,AdminRank=\"DefaultAdmin\"). Use a SteamID64, not a persona name.",
+        "Description": "One administrator per line. AMP writes ServerAdmins= in front of each line. Example: (UserSteamId64=76561198000000000,AdminRank=\"Admin\"). Use a SteamID64, not a persona name. Import puts every ServerAdmins line in this box.",
         "Keywords": "serveradmins,steam,admin",
         "FieldName": "ServerAdmins",
         "InputType": "Textarea",
@@ -1558,7 +1470,7 @@
         "DisplayName": "Player Chat Colors",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Colors:palette:13",
-        "Description": "One PlayerChatColors body per line. AMP prefixes PlayerChatColors= on the first line. For more than one color, start each extra line with PlayerChatColors=. Example: (SteamID=76561198000000000,ChatColor=(R=1.0,G=0.0,B=0.0,A=1.0)). Wiki: PlayerChatColors=(SteamID=PlayerId64, ChatColor=(R=1.00,G=0.00,B=0.00,A=1.00)). Cleafspear uses 0.0-1.0 RGB.",
+        "Description": "One PlayerChatColors entry per line. AMP writes PlayerChatColors= in front of each line. Example: (SteamID=76561198000000000,ChatColor=(R=1.0,G=0.0,B=0.0,A=1.0)). Cleafspear uses 0.0-1.0 RGB. Import puts every PlayerChatColors line in this box.",
         "Keywords": "playerchatcolors,color,chat",
         "FieldName": "PlayerChatColors",
         "InputType": "Textarea",
@@ -1571,7 +1483,7 @@
         "DisplayName": "Player Chat Tags",
         "Category": "Beasts of Bermuda:stadia_controller",
         "Subcategory": "Tags:label:14",
-        "Description": "One PlayerChatTags body per line. AMP prefixes PlayerChatTags= on the first line. For more than one tag, start each extra line with PlayerChatTags=. Example: (SteamID=76561198000000000,ChatTag=\"Staff\"). Wiki: PlayerChatTags=(SteamID=PlayerId64, ChatTag=\"Admin\").",
+        "Description": "One PlayerChatTags entry per line. AMP writes PlayerChatTags= in front of each line. Example: (SteamID=76561198000000000,ChatTag=\"Staff\"). Import puts every PlayerChatTags line in this box.",
         "Keywords": "playerchattags,tag,chat",
         "FieldName": "PlayerChatTags",
         "InputType": "Textarea",

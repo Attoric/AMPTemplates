@@ -52,15 +52,66 @@
                     "ReservedAdminSlots=": "ReservedAdminSlots",
                     "GameMode=": "GameMode",
                     "!WorldEventBuffsToNotUse=ClearArray": "WorldEventBuffsClearArray",
-                    "WorldEventBuffsToNotUse=EVENT_WeatherImmunity": "DisableWorldEventWeatherImmunity",
-                    "WorldEventBuffsToNotUse=EVENT_LowFoodWaterDrain": "DisableWorldEventLowFoodWaterDrain",
-                    "WorldEventBuffsToNotUse=EVENT_AutoResurrection": "DisableWorldEventAutoResurrection",
-                    "WorldEventBuffsToNotUse=EVENT_AISwarm": "DisableWorldEventAISwarm",
-                    "WorldEventBuffsToNotUse=EVENT_Nesting": "DisableWorldEventNesting",
-                    "WorldEventBuffsToNotUse=EVENT_GrowthBuff": "DisableWorldEventGrowthBuff",
-                    "WorldEventBuffsToNotUse=EVENT_PledgeAmplify": "DisableWorldEventPledgeAmplify",
-                    "WorldEventBuffsToNotUse=EVENT_Reskin": "DisableWorldEventReskin",
                     "!AdminCommandRules=ClearArray": "AdminCommandRulesClearArray",
+                    "AdminRanks=": "AdminRanks",
+                    "ServerAdmins=": "ServerAdmins",
+                    "PlayerChatColors=": "PlayerChatColors",
+                    "PlayerChatTags=": "PlayerChatTags",
+                    "": "CustomSettings"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventWeatherImmunity"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventLowFoodWaterDrain"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventAutoResurrection"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventAISwarm"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventNesting"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventGrowthBuff"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventPledgeAmplify"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "DisableWorldEventReskin"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "ConfigFormat": "{0}{1}\")",
+                "SettingMappings": {
                     "AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"": "AdminCommandAnnounce",
                     "AdminCommandRules=(CommandType=EAdminCommands::BanPlayer,MinimalRank=\"": "AdminCommandBanPlayer",
                     "AdminCommandRules=(CommandType=EAdminCommands::CheckServerData,MinimalRank=\"": "AdminCommandCheckServerData",
@@ -82,12 +133,7 @@
                     "AdminCommandRules=(CommandType=EAdminCommands::SpawnEntity,MinimalRank=\"": "AdminCommandSpawnEntity",
                     "AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"": "AdminCommandTeleport",
                     "AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"": "AdminCommandUseObserver",
-                    "AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"": "AdminCommandRestartMap",
-                    "AdminRanks=": "AdminRanks",
-                    "ServerAdmins=": "ServerAdmins",
-                    "PlayerChatColors=": "PlayerChatColors",
-                    "PlayerChatTags=": "PlayerChatTags",
-                    "": "CustomSettings"
+                    "AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"": "AdminCommandRestartMap"
                 }
             },
             {
