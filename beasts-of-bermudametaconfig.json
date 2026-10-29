@@ -51,12 +51,51 @@
                     "bConsoleLocked=": "bConsoleLocked",
                     "ReservedAdminSlots=": "ReservedAdminSlots",
                     "GameMode=": "GameMode",
-                    "!WorldEventBuffsToNotUse=ClearArray": "WorldEventBuffsClearArray",
-                    "!AdminCommandRules=ClearArray": "AdminCommandRulesClearArray",
                     "AdminRanks=": "AdminRanks",
                     "ServerAdmins=": "ServerAdmins",
                     "PlayerChatColors=": "PlayerChatColors",
                     "PlayerChatTags=": "PlayerChatTags",
+                    "ServerAdminPassword=": "ServerAdminPassword",
+                    "!WorldEventBuffsToNotUse=": "WorldEventBuffsClearArray",
+                    "!AdminCommandRules=": "AdminCommandRulesClearArray",
+                    "!CreatureLimits=": "CreatureLimitsClearArray",
+                    "!GrowthLimits=": "GrowthLimitsClearArray",
+                    "!DisabledAITypes=": "DisabledAITypesClearArray",
+                    "!PlayerChatColors=": "PlayerChatColorsClearArray",
+                    "!PlayerChatTags=": "PlayerChatTagsClearArray",
+                    "!AllowedSpeciesGroups=": "AllowedSpeciesGroupsClearArray",
+                    "AllowedSpeciesGroups=": "AllowedSpeciesGroups",
+                    "AdminAllowedCommands=": "AdminAllowedCommands",
+                    "AdminBlockedCommands=": "AdminBlockedCommands",
+                    "ProfanityWords=": "ProfanityWords",
+                    "AutoMessages=": "AutoMessages",
+                    "CreatureLimits=(CreatureType=EDinoType::Acrocanthosaurus,": "CreatureLimitsAcrocanthosaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Apatosaurus,": "CreatureLimitsApatosaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Archelon,": "CreatureLimitsArchelon",
+                    "CreatureLimits=(CreatureType=EDinoType::Arganodus,": "CreatureLimitsArganodus",
+                    "CreatureLimits=(CreatureType=EDinoType::Auroraceratops,": "CreatureLimitsAuroraceratops",
+                    "CreatureLimits=(CreatureType=EDinoType::Coahuilaceratops,": "CreatureLimitsCoahuilaceratops",
+                    "CreatureLimits=(CreatureType=EDinoType::Elasmosaurus,": "CreatureLimitsElasmosaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::HorseshoeCrab,": "CreatureLimitsHorseshoeCrab",
+                    "CreatureLimits=(CreatureType=EDinoType::Kronosaurus,": "CreatureLimitsKronosaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Ichthyovenator,": "CreatureLimitsIchthyovenator",
+                    "CreatureLimits=(CreatureType=EDinoType::Lurdusaurus,": "CreatureLimitsLurdusaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Malawania,": "CreatureLimitsMalawania",
+                    "CreatureLimits=(CreatureType=EDinoType::Megalosaurus,": "CreatureLimitsMegalosaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Megaraptor,": "CreatureLimitsMegaraptor",
+                    "CreatureLimits=(CreatureType=EDinoType::Mosasaurus,": "CreatureLimitsMosasaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Oryctodromeus,": "CreatureLimitsOryctodromeus",
+                    "CreatureLimits=(CreatureType=EDinoType::Pachycephalosaurus,": "CreatureLimitsPachycephalosaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Palaeophis,": "CreatureLimitsPalaeophis",
+                    "CreatureLimits=(CreatureType=EDinoType::Parasaurolophus,": "CreatureLimitsParasaurolophus",
+                    "CreatureLimits=(CreatureType=EDinoType::Pteranodon,": "CreatureLimitsPteranodon",
+                    "CreatureLimits=(CreatureType=EDinoType::Saichania,": "CreatureLimitsSaichania",
+                    "CreatureLimits=(CreatureType=EDinoType::Tropeognathus,": "CreatureLimitsTropeognathus",
+                    "CreatureLimits=(CreatureType=EDinoType::Tyrannosaurus,": "CreatureLimitsTyrannosaurus",
+                    "CreatureLimits=(CreatureType=EDinoType::Utahraptor,": "CreatureLimitsUtahraptor",
+                    "CreatureLimits=(CreatureType=EDinoType::Velociraptor,": "CreatureLimitsVelociraptor",
+                    "CreatureLimits=": "CreatureLimitsExtra",
+                    "GrowthLimits=": "GrowthLimitsExtra",
                     "": "CustomSettings"
                 }
             },
@@ -110,6 +149,12 @@
             },
             {
                 "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "WorldEventBuffsToNotUse=": "WorldEventBuffsExtra"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
                 "ConfigFormat": "{0}{1}\")",
                 "SettingMappings": {
                     "AdminCommandRules=(CommandType=EAdminCommands::Announce,MinimalRank=\"": "AdminCommandAnnounce",
@@ -134,6 +179,67 @@
                     "AdminCommandRules=(CommandType=EAdminCommands::Teleport,MinimalRank=\"": "AdminCommandTeleport",
                     "AdminCommandRules=(CommandType=EAdminCommands::UseObserver,MinimalRank=\"": "AdminCommandUseObserver",
                     "AdminCommandRules=(CommandType=EAdminCommands::RestartMap,MinimalRank=\"": "AdminCommandRestartMap"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "ConfigFormat": "{0}{1}f)",
+                "SettingMappings": {
+                    "GrowthLimits=(Type=EDinoType::Acrocanthosaurus,Limit=": "GrowthLimitAcrocanthosaurus",
+                    "GrowthLimits=(Type=EDinoType::Apatosaurus,Limit=": "GrowthLimitApatosaurus",
+                    "GrowthLimits=(Type=EDinoType::Archelon,Limit=": "GrowthLimitArchelon",
+                    "GrowthLimits=(Type=EDinoType::Arganodus,Limit=": "GrowthLimitArganodus",
+                    "GrowthLimits=(Type=EDinoType::Auroraceratops,Limit=": "GrowthLimitAuroraceratops",
+                    "GrowthLimits=(Type=EDinoType::Coahuilaceratops,Limit=": "GrowthLimitCoahuilaceratops",
+                    "GrowthLimits=(Type=EDinoType::Elasmosaurus,Limit=": "GrowthLimitElasmosaurus",
+                    "GrowthLimits=(Type=EDinoType::HorseshoeCrab,Limit=": "GrowthLimitHorseshoeCrab",
+                    "GrowthLimits=(Type=EDinoType::Kronosaurus,Limit=": "GrowthLimitKronosaurus",
+                    "GrowthLimits=(Type=EDinoType::Ichthyovenator,Limit=": "GrowthLimitIchthyovenator",
+                    "GrowthLimits=(Type=EDinoType::Lurdusaurus,Limit=": "GrowthLimitLurdusaurus",
+                    "GrowthLimits=(Type=EDinoType::Malawania,Limit=": "GrowthLimitMalawania",
+                    "GrowthLimits=(Type=EDinoType::Megalosaurus,Limit=": "GrowthLimitMegalosaurus",
+                    "GrowthLimits=(Type=EDinoType::Megaraptor,Limit=": "GrowthLimitMegaraptor",
+                    "GrowthLimits=(Type=EDinoType::Mosasaurus,Limit=": "GrowthLimitMosasaurus",
+                    "GrowthLimits=(Type=EDinoType::Oryctodromeus,Limit=": "GrowthLimitOryctodromeus",
+                    "GrowthLimits=(Type=EDinoType::Pachycephalosaurus,Limit=": "GrowthLimitPachycephalosaurus",
+                    "GrowthLimits=(Type=EDinoType::Palaeophis,Limit=": "GrowthLimitPalaeophis",
+                    "GrowthLimits=(Type=EDinoType::Parasaurolophus,Limit=": "GrowthLimitParasaurolophus",
+                    "GrowthLimits=(Type=EDinoType::Pteranodon,Limit=": "GrowthLimitPteranodon",
+                    "GrowthLimits=(Type=EDinoType::Saichania,Limit=": "GrowthLimitSaichania",
+                    "GrowthLimits=(Type=EDinoType::Tropeognathus,Limit=": "GrowthLimitTropeognathus",
+                    "GrowthLimits=(Type=EDinoType::Tyrannosaurus,Limit=": "GrowthLimitTyrannosaurus",
+                    "GrowthLimits=(Type=EDinoType::Utahraptor,Limit=": "GrowthLimitUtahraptor",
+                    "GrowthLimits=(Type=EDinoType::Velociraptor,Limit=": "GrowthLimitVelociraptor"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "+DisabledAITypes=": "DisableAIArganodus"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "+DisabledAITypes=": "DisableAIAuroraceratops"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "+DisabledAITypes=": "DisableAIHorseshoeCrab"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "+DisabledAITypes=": "DisableAIMalawania"
+                }
+            },
+            {
+                "Heading": "/Script/BeastsOfBermuda.ServerGameInstance",
+                "SettingMappings": {
+                    "+DisabledAITypes=": "DisabledAITypesExtra"
                 }
             },
             {
