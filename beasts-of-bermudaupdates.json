@@ -18,44 +18,10 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Linux Saved Linker Download",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/Attoric/AMPTemplates/cursor/beasts-of-bermuda-ini-guard-b476/beasts-of-bermuda-link-saved.sh",
-        "UpdateSourceArgs": "beasts-of-bermuda-link-saved.sh",
-        "UpdateSourceTarget": "{{$FullBaseDir}}LinuxServer",
-        "OverwriteExistingFiles": true,
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Linux Run Wrapper Download",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/Attoric/AMPTemplates/cursor/beasts-of-bermuda-ini-guard-b476/beasts-of-bermuda-run.sh",
-        "UpdateSourceArgs": "beasts-of-bermuda-run.sh",
-        "UpdateSourceTarget": "{{$FullBaseDir}}LinuxServer",
-        "OverwriteExistingFiles": true,
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Set Linux Server Executable Flag",
+        "UpdateStageName": "Set Executable Flag",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SetExecutableFlag",
         "UpdateSourceArgs": "{{$FullBaseDir}}LinuxServer/BeastsOfBermuda/Binaries/Linux/BeastsOfBermudaServer",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Set Linux Linker Executable Flag",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceArgs": "{{$FullBaseDir}}LinuxServer/beasts-of-bermuda-link-saved.sh",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Set Linux Wrapper Executable Flag",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceArgs": "{{$FullBaseDir}}LinuxServer/beasts-of-bermuda-run.sh",
         "SkipOnFailure": false
     }
 ]
